@@ -32,13 +32,13 @@ RUN cp /root/.bashrc /home/ubuntu/.bashrc &&\
     chown ubuntu.ubuntu /home/ubuntu/.bashrc
 
 WORKDIR /home/ubuntu
-# 
-# ENV NVIDIA_VISIBLE_DEVICES \
-#     ${NVIDIA_VISIBLE_DEVICES:-all}
-# ENV NVIDIA_DRIVER_CAPABILITIES \
-#     ${NVIDIA_DRIVER_CAPABILITIES:+$NVIDIA_DRIVER_CAPABILITIES,}graphics
-# ENV QT_X11_NO_MITSHM=1
-# ENV EDITOR=vim
+ 
+ENV NVIDIA_VISIBLE_DEVICES \
+     ${NVIDIA_VISIBLE_DEVICES:-all}
+ ENV NVIDIA_DRIVER_CAPABILITIES \
+     ${NVIDIA_DRIVER_CAPABILITIES:+$NVIDIA_DRIVER_CAPABILITIES,}graphics
+#ENV QT_X11_NO_MITSHM=1
+ENV EDITOR=code
 # ENV XDG_RUNTIME_DIR=/tmp
 # 
 RUN apt-get update && apt-get install -y \
@@ -96,11 +96,11 @@ RUN apt update &&\
 #     rm -f urdf-viz-x86_64-unknown-linux-gnu.tar.gz
 # 
 
-RUN echo "source /opt/ros/humble/setup.bash" >> ~/.bashrc
-RUN echo "source /usr/share/colcon_argcomplete/hook/colcon-argcomplete.bash" >> ~/.bashrc
-RUN echo "source /usr/share/colcon_cd/function/colcon_cd.sh" >> ~/.bashrc
-RUN echo "export _colcon_cd_root=/opt/ros/humble/" >> ~/.bashrc
-RUN echo "source /home/ubuntu/2023WaterCode/scripts/command_aliases.sh"
+RUN echo "source /opt/ros/humble/setup.bash" >> /home/ubuntu/.bashrc
+RUN echo "source /usr/share/colcon_argcomplete/hook/colcon-argcomplete.bash" >> /home/ubuntu/.bashrc
+RUN echo "source /usr/share/colcon_cd/function/colcon_cd.sh" >> /home/ubuntu/.bashrc
+RUN echo "export _colcon_cd_root=/opt/ros/humble/" >> /home/ubuntu/.bashrc
+RUN echo "source /home/ubuntu/2023WaterCode/scripts/command_aliases.sh" >> /home/ubuntu/.bashrc
 
 # RUN apt-get autoremove -y \
 #     && apt-get clean -y \
@@ -122,3 +122,11 @@ RUN echo "source /home/ubuntu/2023WaterCode/scripts/command_aliases.sh"
 # RUN echo "bashcompinit" >> /root/.zshrc
 # RUN echo 'eval "$(register-python-argcomplete3 ros2)"' >> /root/.zshrc
 # RUN echo 'eval "$(register-python-argcomplete3 colcon)"' >> /root/.zshrc
+
+RUN export DONT_PROMPT_WSL_INSTALL=1 &&\
+    code --install-extension ms-vscode.cpptools &&\
+    code --install-extension ms-vscode.cpptools-extension-pack &&\
+    code --install-extension ms-vscode.cpptools-themes &&\
+    code --install-extension ms-iot.vscode-ros &&\
+    code --install-extension ms-python.python &&\
+    code --install-extension ms-python.vscode-pylance
