@@ -1,4 +1,0 @@
-[0.136s] Invoking command in '/home/ubuntu/.2023WaterCode.readonly/fishROS_ws/build/examples_rclcpp_minimal_client': /usr/bin/cmake --build /home/ubuntu/.2023WaterCode.readonly/fishROS_ws/build/examples_rclcpp_minimal_client -- -j20 -l20
-[13.614s] [ 50%] [32mBuilding CXX object CMakeFiles/client_main.dir/main.cpp.o[0m
-[112.693s] [100%] [32m[1mLinking CXX executable client_main[0m
-[113.464s] [100%] Built target client_main
