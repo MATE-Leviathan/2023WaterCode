@@ -1,0 +1,3 @@
+[ 50%] [32mBuilding CXX object CMakeFiles/client_main.dir/main.cpp.o[0m
+[100%] [32m[1mLinking CXX executable client_main[0m
+[100%] Built target client_main

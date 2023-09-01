@@ -1,0 +1,58 @@
+[0.009s] Invoking command in '/home/ubuntu/.2023WaterCode.readonly/fishROS_ws/build/examples_rclcpp_wait_set': /usr/bin/cmake --build /home/ubuntu/.2023WaterCode.readonly/fishROS_ws/build/examples_rclcpp_wait_set -- -j20 -l20
+[0.050s] [35m[1mConsolidate compiler generated dependencies of target talker[0m
+[0.066s] [  8%] Built target talker
+[0.077s] [35m[1mConsolidate compiler generated dependencies of target wait_set_topics_with_different_rates[0m
+[0.092s] [ 16%] Built target wait_set_topics_with_different_rates
+[0.103s] [35m[1mConsolidate compiler generated dependencies of target executor_random_order[0m
+[0.118s] [ 25%] Built target executor_random_order
+[0.129s] [35m[1mConsolidate compiler generated dependencies of target wait_set_random_order[0m
+[0.145s] [ 33%] Built target wait_set_random_order
+[0.156s] [35m[1mConsolidate compiler generated dependencies of target wait_set_topics_and_timer[0m
+[0.171s] [ 41%] Built target wait_set_topics_and_timer
+[0.182s] [35m[1mConsolidate compiler generated dependencies of target thread_safe_wait_set[0m
+[0.197s] [ 50%] Built target thread_safe_wait_set
+[0.208s] [35m[1mConsolidate compiler generated dependencies of target static_wait_set[0m
+[0.224s] [ 58%] Built target static_wait_set
+[0.235s] [35m[1mConsolidate compiler generated dependencies of target wait_set[0m
+[0.250s] [ 66%] Built target wait_set
+[0.261s] [35m[1mConsolidate compiler generated dependencies of target wait_set_listener[0m
+[0.277s] [ 75%] Built target wait_set_listener
+[0.287s] [35m[1mConsolidate compiler generated dependencies of target listener[0m
+[0.303s] [ 83%] Built target listener
+[0.314s] [35m[1mConsolidate compiler generated dependencies of target wait_set_talker[0m
+[0.330s] [ 91%] Built target wait_set_talker
+[0.340s] [35m[1mConsolidate compiler generated dependencies of target wait_set_composed[0m
+[0.355s] [100%] Built target wait_set_composed
+[0.367s] Invoked command in '/home/ubuntu/.2023WaterCode.readonly/fishROS_ws/build/examples_rclcpp_wait_set' returned '0': /usr/bin/cmake --build /home/ubuntu/.2023WaterCode.readonly/fishROS_ws/build/examples_rclcpp_wait_set -- -j20 -l20
+[0.417s] Invoking command in '/home/ubuntu/.2023WaterCode.readonly/fishROS_ws/build/examples_rclcpp_wait_set': /usr/bin/cmake --install /home/ubuntu/.2023WaterCode.readonly/fishROS_ws/build/examples_rclcpp_wait_set
+[0.424s] -- Install configuration: ""
+[0.425s] -- Execute custom install script
+[0.426s] -- Symlinking: /home/ubuntu/.2023WaterCode.readonly/fishROS_ws/install/examples_rclcpp_wait_set/lib/examples_rclcpp_wait_set/wait_set_talker
+[0.434s] -- Symlinking: /home/ubuntu/.2023WaterCode.readonly/fishROS_ws/install/examples_rclcpp_wait_set/lib/examples_rclcpp_wait_set/wait_set_listener
+[0.441s] -- Symlinking: /home/ubuntu/.2023WaterCode.readonly/fishROS_ws/install/examples_rclcpp_wait_set/lib/libtalker.so
+[0.449s] -- Symlinking: /home/ubuntu/.2023WaterCode.readonly/fishROS_ws/install/examples_rclcpp_wait_set/lib/liblistener.so
+[0.457s] -- Symlinking: /home/ubuntu/.2023WaterCode.readonly/fishROS_ws/install/examples_rclcpp_wait_set/lib/examples_rclcpp_wait_set/wait_set
+[0.464s] -- Symlinking: /home/ubuntu/.2023WaterCode.readonly/fishROS_ws/install/examples_rclcpp_wait_set/lib/examples_rclcpp_wait_set/static_wait_set
+[0.472s] -- Symlinking: /home/ubuntu/.2023WaterCode.readonly/fishROS_ws/install/examples_rclcpp_wait_set/lib/examples_rclcpp_wait_set/thread_safe_wait_set
+[0.479s] -- Symlinking: /home/ubuntu/.2023WaterCode.readonly/fishROS_ws/install/examples_rclcpp_wait_set/lib/examples_rclcpp_wait_set/wait_set_topics_and_timer
+[0.487s] -- Symlinking: /home/ubuntu/.2023WaterCode.readonly/fishROS_ws/install/examples_rclcpp_wait_set/lib/examples_rclcpp_wait_set/wait_set_random_order
+[0.495s] -- Symlinking: /home/ubuntu/.2023WaterCode.readonly/fishROS_ws/install/examples_rclcpp_wait_set/lib/examples_rclcpp_wait_set/executor_random_order
+[0.502s] -- Symlinking: /home/ubuntu/.2023WaterCode.readonly/fishROS_ws/install/examples_rclcpp_wait_set/lib/examples_rclcpp_wait_set/wait_set_topics_with_different_rates
+[0.510s] -- Symlinking: /home/ubuntu/.2023WaterCode.readonly/fishROS_ws/install/examples_rclcpp_wait_set/lib/examples_rclcpp_wait_set/wait_set_composed
+[0.517s] -- Symlinking: /home/ubuntu/.2023WaterCode.readonly/fishROS_ws/install/examples_rclcpp_wait_set/share/ament_index/resource_index/package_run_dependencies/examples_rclcpp_wait_set
+[0.525s] -- Symlinking: /home/ubuntu/.2023WaterCode.readonly/fishROS_ws/install/examples_rclcpp_wait_set/share/ament_index/resource_index/parent_prefix_path/examples_rclcpp_wait_set
+[0.533s] -- Symlinking: /home/ubuntu/.2023WaterCode.readonly/fishROS_ws/install/examples_rclcpp_wait_set/share/examples_rclcpp_wait_set/environment/ament_prefix_path.sh
+[0.540s] -- Symlinking: /home/ubuntu/.2023WaterCode.readonly/fishROS_ws/install/examples_rclcpp_wait_set/share/examples_rclcpp_wait_set/environment/ament_prefix_path.dsv
+[0.547s] -- Symlinking: /home/ubuntu/.2023WaterCode.readonly/fishROS_ws/install/examples_rclcpp_wait_set/share/examples_rclcpp_wait_set/environment/path.sh
+[0.555s] -- Symlinking: /home/ubuntu/.2023WaterCode.readonly/fishROS_ws/install/examples_rclcpp_wait_set/share/examples_rclcpp_wait_set/environment/path.dsv
+[0.563s] -- Symlinking: /home/ubuntu/.2023WaterCode.readonly/fishROS_ws/install/examples_rclcpp_wait_set/share/examples_rclcpp_wait_set/local_setup.bash
+[0.570s] -- Symlinking: /home/ubuntu/.2023WaterCode.readonly/fishROS_ws/install/examples_rclcpp_wait_set/share/examples_rclcpp_wait_set/local_setup.sh
+[0.578s] -- Symlinking: /home/ubuntu/.2023WaterCode.readonly/fishROS_ws/install/examples_rclcpp_wait_set/share/examples_rclcpp_wait_set/local_setup.zsh
+[0.585s] -- Symlinking: /home/ubuntu/.2023WaterCode.readonly/fishROS_ws/install/examples_rclcpp_wait_set/share/examples_rclcpp_wait_set/local_setup.dsv
+[0.593s] -- Symlinking: /home/ubuntu/.2023WaterCode.readonly/fishROS_ws/install/examples_rclcpp_wait_set/share/examples_rclcpp_wait_set/package.dsv
+[0.600s] -- Symlinking: /home/ubuntu/.2023WaterCode.readonly/fishROS_ws/install/examples_rclcpp_wait_set/share/ament_index/resource_index/packages/examples_rclcpp_wait_set
+[0.608s] -- Symlinking: /home/ubuntu/.2023WaterCode.readonly/fishROS_ws/install/examples_rclcpp_wait_set/share/ament_index/resource_index/rclcpp_components/examples_rclcpp_wait_set
+[0.616s] -- Symlinking: /home/ubuntu/.2023WaterCode.readonly/fishROS_ws/install/examples_rclcpp_wait_set/share/examples_rclcpp_wait_set/cmake/examples_rclcpp_wait_setConfig.cmake
+[0.623s] -- Symlinking: /home/ubuntu/.2023WaterCode.readonly/fishROS_ws/install/examples_rclcpp_wait_set/share/examples_rclcpp_wait_set/cmake/examples_rclcpp_wait_setConfig-version.cmake
+[0.631s] -- Symlinking: /home/ubuntu/.2023WaterCode.readonly/fishROS_ws/install/examples_rclcpp_wait_set/share/examples_rclcpp_wait_set/package.xml
+[0.642s] Invoked command in '/home/ubuntu/.2023WaterCode.readonly/fishROS_ws/build/examples_rclcpp_wait_set' returned '0': /usr/bin/cmake --install /home/ubuntu/.2023WaterCode.readonly/fishROS_ws/build/examples_rclcpp_wait_set

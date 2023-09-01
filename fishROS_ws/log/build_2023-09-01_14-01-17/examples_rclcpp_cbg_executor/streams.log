@@ -1,0 +1,19 @@
+[0.135s] Invoking command in '/home/ubuntu/.2023WaterCode.readonly/fishROS_ws/build/examples_rclcpp_cbg_executor': /usr/bin/cmake --build /home/ubuntu/.2023WaterCode.readonly/fishROS_ws/build/examples_rclcpp_cbg_executor -- -j20 -l20
+[13.591s] [35m[1mConsolidate compiler generated dependencies of target pong[0m
+[13.591s] [35m[1mConsolidate compiler generated dependencies of target ping[0m
+[13.591s] [35m[1mConsolidate compiler generated dependencies of target ping_pong[0m
+[13.592s] [ 10%] [32mBuilding CXX object CMakeFiles/ping.dir/src/examples_rclcpp_cbg_executor/ping_node.cpp.o[0m
+[13.592s] [ 20%] [32mBuilding CXX object CMakeFiles/ping_pong.dir/src/examples_rclcpp_cbg_executor/ping_node.cpp.o[0m
+[13.592s] [ 30%] [32mBuilding CXX object CMakeFiles/pong.dir/src/examples_rclcpp_cbg_executor/pong_node.cpp.o[0m
+[13.592s] [ 40%] [32mBuilding CXX object CMakeFiles/ping_pong.dir/src/examples_rclcpp_cbg_executor/pong_node.cpp.o[0m
+[109.496s] [01m[Kc++:[m[K [01;31m[Kfatal error: [m[KKilled signal terminated program cc1plus
+[109.498s] compilation terminated.
+[109.501s] gmake[2]: *** [CMakeFiles/ping_pong.dir/build.make:90: CMakeFiles/ping_pong.dir/src/examples_rclcpp_cbg_executor/ping_node.cpp.o] Error 1
+[109.503s] gmake[2]: *** Waiting for unfinished jobs....
+[126.234s] gmake[1]: *** [CMakeFiles/Makefile2:193: CMakeFiles/ping_pong.dir/all] Error 2
+[126.234s] gmake[1]: *** Waiting for unfinished jobs....
+[126.967s] [ 50%] [32m[1mLinking CXX executable pong[0m
+[127.943s] [ 60%] Built target pong
+[128.276s] [ 70%] [32m[1mLinking CXX executable ping[0m
+[128.770s] [ 80%] Built target ping
+[128.774s] gmake: *** [Makefile:146: all] Error 2

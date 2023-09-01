@@ -1,0 +1,35 @@
+[0.009s] Invoking command in '/home/ubuntu/.2023WaterCode.readonly/fishROS_ws/build/examples_rclcpp_minimal_composition': /usr/bin/cmake --build /home/ubuntu/.2023WaterCode.readonly/fishROS_ws/build/examples_rclcpp_minimal_composition -- -j20 -l20
+[0.053s] [35m[1mConsolidate compiler generated dependencies of target composition_nodes[0m
+[0.074s] [ 33%] Built target composition_nodes
+[0.084s] [35m[1mConsolidate compiler generated dependencies of target composition_publisher[0m
+[0.102s] [ 55%] Built target composition_publisher
+[0.113s] [35m[1mConsolidate compiler generated dependencies of target composition_composed[0m
+[0.130s] [ 77%] Built target composition_composed
+[0.141s] [35m[1mConsolidate compiler generated dependencies of target composition_subscriber[0m
+[0.158s] [100%] Built target composition_subscriber
+[0.171s] Invoked command in '/home/ubuntu/.2023WaterCode.readonly/fishROS_ws/build/examples_rclcpp_minimal_composition' returned '0': /usr/bin/cmake --build /home/ubuntu/.2023WaterCode.readonly/fishROS_ws/build/examples_rclcpp_minimal_composition -- -j20 -l20
+[0.205s] Invoking command in '/home/ubuntu/.2023WaterCode.readonly/fishROS_ws/build/examples_rclcpp_minimal_composition': /usr/bin/cmake --install /home/ubuntu/.2023WaterCode.readonly/fishROS_ws/build/examples_rclcpp_minimal_composition
+[0.213s] -- Install configuration: ""
+[0.213s] -- Execute custom install script
+[0.214s] -- Symlinking: /home/ubuntu/.2023WaterCode.readonly/fishROS_ws/install/examples_rclcpp_minimal_composition/share/examples_rclcpp_minimal_composition/environment/library_path.sh
+[0.223s] -- Symlinking: /home/ubuntu/.2023WaterCode.readonly/fishROS_ws/install/examples_rclcpp_minimal_composition/share/examples_rclcpp_minimal_composition/environment/library_path.dsv
+[0.232s] -- Symlinking: /home/ubuntu/.2023WaterCode.readonly/fishROS_ws/install/examples_rclcpp_minimal_composition/lib/libcomposition_nodes.so
+[0.240s] -- Symlinking: /home/ubuntu/.2023WaterCode.readonly/fishROS_ws/install/examples_rclcpp_minimal_composition/lib/examples_rclcpp_minimal_composition/composition_publisher
+[0.249s] -- Symlinking: /home/ubuntu/.2023WaterCode.readonly/fishROS_ws/install/examples_rclcpp_minimal_composition/lib/examples_rclcpp_minimal_composition/composition_subscriber
+[0.257s] -- Symlinking: /home/ubuntu/.2023WaterCode.readonly/fishROS_ws/install/examples_rclcpp_minimal_composition/lib/examples_rclcpp_minimal_composition/composition_composed
+[0.266s] -- Symlinking: /home/ubuntu/.2023WaterCode.readonly/fishROS_ws/install/examples_rclcpp_minimal_composition/share/ament_index/resource_index/package_run_dependencies/examples_rclcpp_minimal_composition
+[0.274s] -- Symlinking: /home/ubuntu/.2023WaterCode.readonly/fishROS_ws/install/examples_rclcpp_minimal_composition/share/ament_index/resource_index/parent_prefix_path/examples_rclcpp_minimal_composition
+[0.282s] -- Symlinking: /home/ubuntu/.2023WaterCode.readonly/fishROS_ws/install/examples_rclcpp_minimal_composition/share/examples_rclcpp_minimal_composition/environment/ament_prefix_path.sh
+[0.290s] -- Symlinking: /home/ubuntu/.2023WaterCode.readonly/fishROS_ws/install/examples_rclcpp_minimal_composition/share/examples_rclcpp_minimal_composition/environment/ament_prefix_path.dsv
+[0.298s] -- Symlinking: /home/ubuntu/.2023WaterCode.readonly/fishROS_ws/install/examples_rclcpp_minimal_composition/share/examples_rclcpp_minimal_composition/environment/path.sh
+[0.307s] -- Symlinking: /home/ubuntu/.2023WaterCode.readonly/fishROS_ws/install/examples_rclcpp_minimal_composition/share/examples_rclcpp_minimal_composition/environment/path.dsv
+[0.314s] -- Symlinking: /home/ubuntu/.2023WaterCode.readonly/fishROS_ws/install/examples_rclcpp_minimal_composition/share/examples_rclcpp_minimal_composition/local_setup.bash
+[0.323s] -- Symlinking: /home/ubuntu/.2023WaterCode.readonly/fishROS_ws/install/examples_rclcpp_minimal_composition/share/examples_rclcpp_minimal_composition/local_setup.sh
+[0.331s] -- Symlinking: /home/ubuntu/.2023WaterCode.readonly/fishROS_ws/install/examples_rclcpp_minimal_composition/share/examples_rclcpp_minimal_composition/local_setup.zsh
+[0.338s] -- Symlinking: /home/ubuntu/.2023WaterCode.readonly/fishROS_ws/install/examples_rclcpp_minimal_composition/share/examples_rclcpp_minimal_composition/local_setup.dsv
+[0.346s] -- Symlinking: /home/ubuntu/.2023WaterCode.readonly/fishROS_ws/install/examples_rclcpp_minimal_composition/share/examples_rclcpp_minimal_composition/package.dsv
+[0.354s] -- Symlinking: /home/ubuntu/.2023WaterCode.readonly/fishROS_ws/install/examples_rclcpp_minimal_composition/share/ament_index/resource_index/packages/examples_rclcpp_minimal_composition
+[0.362s] -- Symlinking: /home/ubuntu/.2023WaterCode.readonly/fishROS_ws/install/examples_rclcpp_minimal_composition/share/examples_rclcpp_minimal_composition/cmake/examples_rclcpp_minimal_compositionConfig.cmake
+[0.370s] -- Symlinking: /home/ubuntu/.2023WaterCode.readonly/fishROS_ws/install/examples_rclcpp_minimal_composition/share/examples_rclcpp_minimal_composition/cmake/examples_rclcpp_minimal_compositionConfig-version.cmake
+[0.378s] -- Symlinking: /home/ubuntu/.2023WaterCode.readonly/fishROS_ws/install/examples_rclcpp_minimal_composition/share/examples_rclcpp_minimal_composition/package.xml
+[0.390s] Invoked command in '/home/ubuntu/.2023WaterCode.readonly/fishROS_ws/build/examples_rclcpp_minimal_composition' returned '0': /usr/bin/cmake --install /home/ubuntu/.2023WaterCode.readonly/fishROS_ws/build/examples_rclcpp_minimal_composition

@@ -1,0 +1,22 @@
+[0.597s] Invoking command in '/home/ubuntu/.2023WaterCode.readonly/fishROS_ws/src/examples/rclpy/guard_conditions': AMENT_PREFIX_PATH=/home/ubuntu/.2023WaterCode.readonly/fishROS_ws/install/examples_rclpy_guard_conditions:${AMENT_PREFIX_PATH} PYTEST_ADDOPTS=--tb=short --junit-xml=/home/ubuntu/.2023WaterCode.readonly/fishROS_ws/build/examples_rclpy_guard_conditions/pytest.xml --junit-prefix=examples_rclpy_guard_conditions -o cache_dir=/home/ubuntu/.2023WaterCode.readonly/fishROS_ws/build/examples_rclpy_guard_conditions/.pytest_cache PYTHONPATH=/home/ubuntu/.2023WaterCode.readonly/fishROS_ws/build/examples_rclpy_guard_conditions:/home/ubuntu/.2023WaterCode.readonly/fishROS_ws/install/examples_rclpy_guard_conditions/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -m pytest
+[1.975s] 
+[1.975s] [33m=============================== warnings summary ===============================[0m
+[1.975s] guard_conditions/test/test_flake8.py::test_flake8
+[1.975s] guard_conditions/test/test_flake8.py::test_flake8
+[1.975s]   Warning: SelectableGroups dict interface is deprecated. Use select.
+[1.975s] 
+[1.975s] -- Docs: https://docs.pytest.org/en/stable/warnings.html
+[1.976s] [1m============================= test session starts ==============================[0m
+[1.976s] platform linux -- Python 3.10.12, pytest-6.2.5, py-1.10.0, pluggy-0.13.0
+[1.976s] cachedir: /home/ubuntu/.2023WaterCode.readonly/fishROS_ws/build/examples_rclpy_guard_conditions/.pytest_cache
+[1.976s] rootdir: /home/ubuntu/.2023WaterCode.readonly/fishROS_ws/src/examples/rclpy, configfile: pytest.ini
+[1.976s] plugins: ament-lint-0.12.7, launch-testing-ros-0.19.5, ament-pep257-0.12.7, ament-copyright-0.12.7, ament-xmllint-0.12.7, launch-testing-1.0.4, ament-flake8-0.12.7, colcon-core-0.12.1
+[1.976s] [1mcollecting ... [0m[1m
+[1.976s] collected 3 items                                                              [0m
+[1.976s] 
+[1.976s] test/test_copyright.py [32m.[0m[32m                                                 [ 33%][0m
+[1.977s] test/test_flake8.py [32m.[0m[33m                                                    [ 66%][0m
+[1.977s] test/test_pep257.py [32m.[0m[33m                                                    [100%][0m
+[1.977s] - generated xml file: /home/ubuntu/.2023WaterCode.readonly/fishROS_ws/build/examples_rclpy_guard_conditions/pytest.xml -
+[1.977s] [33m======================== [32m3 passed[0m, [33m[1m2 warnings[0m[33m in 0.33s[0m[33m =========================[0m
+[2.254s] Invoked command in '/home/ubuntu/.2023WaterCode.readonly/fishROS_ws/src/examples/rclpy/guard_conditions' returned '0': AMENT_PREFIX_PATH=/home/ubuntu/.2023WaterCode.readonly/fishROS_ws/install/examples_rclpy_guard_conditions:${AMENT_PREFIX_PATH} PYTEST_ADDOPTS=--tb=short --junit-xml=/home/ubuntu/.2023WaterCode.readonly/fishROS_ws/build/examples_rclpy_guard_conditions/pytest.xml --junit-prefix=examples_rclpy_guard_conditions -o cache_dir=/home/ubuntu/.2023WaterCode.readonly/fishROS_ws/build/examples_rclpy_guard_conditions/.pytest_cache PYTHONPATH=/home/ubuntu/.2023WaterCode.readonly/fishROS_ws/build/examples_rclpy_guard_conditions:/home/ubuntu/.2023WaterCode.readonly/fishROS_ws/install/examples_rclpy_guard_conditions/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -m pytest

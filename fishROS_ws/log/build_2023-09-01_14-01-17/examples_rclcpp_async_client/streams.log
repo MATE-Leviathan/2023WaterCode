@@ -1,0 +1,24 @@
+[0.142s] Invoking command in '/home/ubuntu/.2023WaterCode.readonly/fishROS_ws/build/examples_rclcpp_async_client': /usr/bin/cmake --build /home/ubuntu/.2023WaterCode.readonly/fishROS_ws/build/examples_rclcpp_async_client -- -j20 -l20
+[13.602s] [35m[1mConsolidate compiler generated dependencies of target client_main[0m
+[13.603s] [100%] Built target client_main
+[13.795s] Invoked command in '/home/ubuntu/.2023WaterCode.readonly/fishROS_ws/build/examples_rclcpp_async_client' returned '0': /usr/bin/cmake --build /home/ubuntu/.2023WaterCode.readonly/fishROS_ws/build/examples_rclcpp_async_client -- -j20 -l20
+[14.616s] Invoking command in '/home/ubuntu/.2023WaterCode.readonly/fishROS_ws/build/examples_rclcpp_async_client': /usr/bin/cmake --install /home/ubuntu/.2023WaterCode.readonly/fishROS_ws/build/examples_rclcpp_async_client
+[14.675s] -- Install configuration: ""
+[14.676s] -- Execute custom install script
+[14.677s] -- Symlinking: /home/ubuntu/.2023WaterCode.readonly/fishROS_ws/install/examples_rclcpp_async_client/lib/examples_rclcpp_async_client/client_main
+[14.795s] -- Symlinking: /home/ubuntu/.2023WaterCode.readonly/fishROS_ws/install/examples_rclcpp_async_client/share/ament_index/resource_index/package_run_dependencies/examples_rclcpp_async_client
+[14.889s] -- Symlinking: /home/ubuntu/.2023WaterCode.readonly/fishROS_ws/install/examples_rclcpp_async_client/share/ament_index/resource_index/parent_prefix_path/examples_rclcpp_async_client
+[14.977s] -- Symlinking: /home/ubuntu/.2023WaterCode.readonly/fishROS_ws/install/examples_rclcpp_async_client/share/examples_rclcpp_async_client/environment/ament_prefix_path.sh
+[15.215s] -- Symlinking: /home/ubuntu/.2023WaterCode.readonly/fishROS_ws/install/examples_rclcpp_async_client/share/examples_rclcpp_async_client/environment/ament_prefix_path.dsv
+[15.268s] -- Symlinking: /home/ubuntu/.2023WaterCode.readonly/fishROS_ws/install/examples_rclcpp_async_client/share/examples_rclcpp_async_client/environment/path.sh
+[15.335s] -- Symlinking: /home/ubuntu/.2023WaterCode.readonly/fishROS_ws/install/examples_rclcpp_async_client/share/examples_rclcpp_async_client/environment/path.dsv
+[15.374s] -- Symlinking: /home/ubuntu/.2023WaterCode.readonly/fishROS_ws/install/examples_rclcpp_async_client/share/examples_rclcpp_async_client/local_setup.bash
+[15.411s] -- Symlinking: /home/ubuntu/.2023WaterCode.readonly/fishROS_ws/install/examples_rclcpp_async_client/share/examples_rclcpp_async_client/local_setup.sh
+[15.458s] -- Symlinking: /home/ubuntu/.2023WaterCode.readonly/fishROS_ws/install/examples_rclcpp_async_client/share/examples_rclcpp_async_client/local_setup.zsh
+[15.580s] -- Symlinking: /home/ubuntu/.2023WaterCode.readonly/fishROS_ws/install/examples_rclcpp_async_client/share/examples_rclcpp_async_client/local_setup.dsv
+[15.615s] -- Symlinking: /home/ubuntu/.2023WaterCode.readonly/fishROS_ws/install/examples_rclcpp_async_client/share/examples_rclcpp_async_client/package.dsv
+[15.683s] -- Symlinking: /home/ubuntu/.2023WaterCode.readonly/fishROS_ws/install/examples_rclcpp_async_client/share/ament_index/resource_index/packages/examples_rclcpp_async_client
+[15.701s] -- Symlinking: /home/ubuntu/.2023WaterCode.readonly/fishROS_ws/install/examples_rclcpp_async_client/share/examples_rclcpp_async_client/cmake/examples_rclcpp_async_clientConfig.cmake
+[15.728s] -- Symlinking: /home/ubuntu/.2023WaterCode.readonly/fishROS_ws/install/examples_rclcpp_async_client/share/examples_rclcpp_async_client/cmake/examples_rclcpp_async_clientConfig-version.cmake
+[15.791s] -- Symlinking: /home/ubuntu/.2023WaterCode.readonly/fishROS_ws/install/examples_rclcpp_async_client/share/examples_rclcpp_async_client/package.xml
+[15.953s] Invoked command in '/home/ubuntu/.2023WaterCode.readonly/fishROS_ws/build/examples_rclcpp_async_client' returned '0': /usr/bin/cmake --install /home/ubuntu/.2023WaterCode.readonly/fishROS_ws/build/examples_rclcpp_async_client

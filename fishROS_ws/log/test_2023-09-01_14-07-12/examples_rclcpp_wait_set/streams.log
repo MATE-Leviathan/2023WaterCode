@@ -1,0 +1,163 @@
+[2.319s] Invoking command in '/home/ubuntu/.2023WaterCode.readonly/fishROS_ws/build/examples_rclcpp_wait_set': AMENT_PREFIX_PATH=/home/ubuntu/.2023WaterCode.readonly/fishROS_ws/install/examples_rclcpp_wait_set:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/ubuntu/.2023WaterCode.readonly/fishROS_ws/install/examples_rclcpp_wait_set LD_LIBRARY_PATH=/home/ubuntu/.2023WaterCode.readonly/fishROS_ws/install/examples_rclcpp_wait_set/lib:${LD_LIBRARY_PATH} /usr/bin/ctest -C Release -D ExperimentalTest --no-compress-output -V --force-new-ctest-process
+[3.476s] UpdateCTestConfiguration  from :/home/ubuntu/.2023WaterCode.readonly/fishROS_ws/build/examples_rclcpp_wait_set/CTestConfiguration.ini
+[3.476s] Parse Config file:/home/ubuntu/.2023WaterCode.readonly/fishROS_ws/build/examples_rclcpp_wait_set/CTestConfiguration.ini
+[3.476s]    Site: dino-laptop
+[3.477s]    Build name: (empty)
+[3.477s]  Add coverage exclude regular expressions.
+[3.477s] Create new tag: 20230901-1407 - Experimental
+[3.477s] UpdateCTestConfiguration  from :/home/ubuntu/.2023WaterCode.readonly/fishROS_ws/build/examples_rclcpp_wait_set/CTestConfiguration.ini
+[3.477s] Parse Config file:/home/ubuntu/.2023WaterCode.readonly/fishROS_ws/build/examples_rclcpp_wait_set/CTestConfiguration.ini
+[3.477s] Test project /home/ubuntu/.2023WaterCode.readonly/fishROS_ws/build/examples_rclcpp_wait_set
+[3.478s] Constructing a list of tests
+[3.478s] Done constructing a list of tests
+[3.478s] Updating test list for fixtures
+[3.478s] Added 0 tests to meet fixture requirements
+[3.478s] Checking test dependency graph...
+[3.478s] Checking test dependency graph end
+[3.479s] test 1
+[3.479s]     Start 1: copyright
+[3.479s] 
+[3.479s] 1: Test command: /usr/bin/python3.10 "-u" "/opt/ros/humble/share/ament_cmake_test/cmake/run_test.py" "/home/ubuntu/.2023WaterCode.readonly/fishROS_ws/build/examples_rclcpp_wait_set/test_results/examples_rclcpp_wait_set/copyright.xunit.xml" "--package-name" "examples_rclcpp_wait_set" "--output-file" "/home/ubuntu/.2023WaterCode.readonly/fishROS_ws/build/examples_rclcpp_wait_set/ament_copyright/copyright.txt" "--command" "/opt/ros/humble/bin/ament_copyright" "--xunit-file" "/home/ubuntu/.2023WaterCode.readonly/fishROS_ws/build/examples_rclcpp_wait_set/test_results/examples_rclcpp_wait_set/copyright.xunit.xml"
+[3.479s] 1: Test timeout computed to be: 200
+[3.479s] 1: -- run_test.py: invoking following command in '/home/ubuntu/.2023WaterCode.readonly/fishROS_ws/src/examples/rclcpp/wait_set':
+[3.480s] 1:  - /opt/ros/humble/bin/ament_copyright --xunit-file /home/ubuntu/.2023WaterCode.readonly/fishROS_ws/build/examples_rclcpp_wait_set/test_results/examples_rclcpp_wait_set/copyright.xunit.xml
+[3.480s] 1: No problems found, checked 15 files
+[3.480s] 1: -- run_test.py: return code 0
+[3.480s] 1: -- run_test.py: verify result file '/home/ubuntu/.2023WaterCode.readonly/fishROS_ws/build/examples_rclcpp_wait_set/test_results/examples_rclcpp_wait_set/copyright.xunit.xml'
+[3.480s] 1/6 Test #1: copyright ........................   Passed    0.83 sec
+[3.481s] test 2
+[3.481s]     Start 2: cppcheck
+[3.481s] 
+[3.481s] 2: Test command: /usr/bin/python3.10 "-u" "/opt/ros/humble/share/ament_cmake_test/cmake/run_test.py" "/home/ubuntu/.2023WaterCode.readonly/fishROS_ws/build/examples_rclcpp_wait_set/test_results/examples_rclcpp_wait_set/cppcheck.xunit.xml" "--package-name" "examples_rclcpp_wait_set" "--output-file" "/home/ubuntu/.2023WaterCode.readonly/fishROS_ws/build/examples_rclcpp_wait_set/ament_cppcheck/cppcheck.txt" "--command" "/opt/ros/humble/bin/ament_cppcheck" "--xunit-file" "/home/ubuntu/.2023WaterCode.readonly/fishROS_ws/build/examples_rclcpp_wait_set/test_results/examples_rclcpp_wait_set/cppcheck.xunit.xml" "--include_dirs" "/home/ubuntu/.2023WaterCode.readonly/fishROS_ws/src/examples/rclcpp/wait_set/include"
+[3.481s] 2: Test timeout computed to be: 300
+[3.482s] 2: -- run_test.py: invoking following command in '/home/ubuntu/.2023WaterCode.readonly/fishROS_ws/src/examples/rclcpp/wait_set':
+[3.482s] 2:  - /opt/ros/humble/bin/ament_cppcheck --xunit-file /home/ubuntu/.2023WaterCode.readonly/fishROS_ws/build/examples_rclcpp_wait_set/test_results/examples_rclcpp_wait_set/cppcheck.xunit.xml --include_dirs /home/ubuntu/.2023WaterCode.readonly/fishROS_ws/src/examples/rclcpp/wait_set/include
+[3.482s] 2: cppcheck 2.7 has known performance issues and therefore will not be used, set the AMENT_CPPCHECK_ALLOW_SLOW_VERSIONS environment variable to override this.
+[3.484s] 2: -- run_test.py: return code 0
+[3.485s] 2: -- run_test.py: verify result file '/home/ubuntu/.2023WaterCode.readonly/fishROS_ws/build/examples_rclcpp_wait_set/test_results/examples_rclcpp_wait_set/cppcheck.xunit.xml'
+[3.501s] 2/6 Test #2: cppcheck .........................   Passed    0.33 sec
+[3.501s] test 3
+[3.501s]     Start 3: cpplint
+[3.501s] 
+[3.501s] 3: Test command: /usr/bin/python3.10 "-u" "/opt/ros/humble/share/ament_cmake_test/cmake/run_test.py" "/home/ubuntu/.2023WaterCode.readonly/fishROS_ws/build/examples_rclcpp_wait_set/test_results/examples_rclcpp_wait_set/cpplint.xunit.xml" "--package-name" "examples_rclcpp_wait_set" "--output-file" "/home/ubuntu/.2023WaterCode.readonly/fishROS_ws/build/examples_rclcpp_wait_set/ament_cpplint/cpplint.txt" "--command" "/opt/ros/humble/bin/ament_cpplint" "--xunit-file" "/home/ubuntu/.2023WaterCode.readonly/fishROS_ws/build/examples_rclcpp_wait_set/test_results/examples_rclcpp_wait_set/cpplint.xunit.xml"
+[3.502s] 3: Test timeout computed to be: 120
+[3.640s] 3: -- run_test.py: invoking following command in '/home/ubuntu/.2023WaterCode.readonly/fishROS_ws/src/examples/rclcpp/wait_set':
+[3.640s] 3:  - /opt/ros/humble/bin/ament_cpplint --xunit-file /home/ubuntu/.2023WaterCode.readonly/fishROS_ws/build/examples_rclcpp_wait_set/test_results/examples_rclcpp_wait_set/cpplint.xunit.xml
+[4.375s] 3: Using '--root=/home/ubuntu/.2023WaterCode.readonly/fishROS_ws/src/examples/rclcpp/wait_set/include' argument
+[4.375s] 3: 
+[4.376s] 3: Done processing /home/ubuntu/.2023WaterCode.readonly/fishROS_ws/src/examples/rclcpp/wait_set/include/wait_set/listener.hpp
+[4.376s] 3: 
+[4.376s] 3: Done processing /home/ubuntu/.2023WaterCode.readonly/fishROS_ws/src/examples/rclcpp/wait_set/include/wait_set/random_listener.hpp
+[4.376s] 3: 
+[4.376s] 3: Done processing /home/ubuntu/.2023WaterCode.readonly/fishROS_ws/src/examples/rclcpp/wait_set/include/wait_set/random_talker.hpp
+[4.376s] 3: 
+[4.376s] 3: Done processing /home/ubuntu/.2023WaterCode.readonly/fishROS_ws/src/examples/rclcpp/wait_set/include/wait_set/talker.hpp
+[4.376s] 3: 
+[4.376s] 3: Done processing /home/ubuntu/.2023WaterCode.readonly/fishROS_ws/src/examples/rclcpp/wait_set/include/wait_set/visibility.h
+[4.376s] 3: 
+[4.377s] 3: Using '--root=/home/ubuntu/.2023WaterCode.readonly/fishROS_ws/src/examples/rclcpp/wait_set/src' argument
+[4.377s] 3: 
+[4.377s] 3: Done processing /home/ubuntu/.2023WaterCode.readonly/fishROS_ws/src/examples/rclcpp/wait_set/src/executor_random_order.cpp
+[4.377s] 3: 
+[4.377s] 3: Done processing /home/ubuntu/.2023WaterCode.readonly/fishROS_ws/src/examples/rclcpp/wait_set/src/listener.cpp
+[4.377s] 3: 
+[4.377s] 3: Done processing /home/ubuntu/.2023WaterCode.readonly/fishROS_ws/src/examples/rclcpp/wait_set/src/static_wait_set.cpp
+[4.377s] 3: 
+[4.377s] 3: Done processing /home/ubuntu/.2023WaterCode.readonly/fishROS_ws/src/examples/rclcpp/wait_set/src/talker.cpp
+[4.378s] 3: 
+[4.378s] 3: Done processing /home/ubuntu/.2023WaterCode.readonly/fishROS_ws/src/examples/rclcpp/wait_set/src/thread_safe_wait_set.cpp
+[4.378s] 3: 
+[4.378s] 3: Done processing /home/ubuntu/.2023WaterCode.readonly/fishROS_ws/src/examples/rclcpp/wait_set/src/wait_set.cpp
+[4.378s] 3: 
+[4.378s] 3: Done processing /home/ubuntu/.2023WaterCode.readonly/fishROS_ws/src/examples/rclcpp/wait_set/src/wait_set_composed.cpp
+[4.378s] 3: 
+[4.378s] 3: Done processing /home/ubuntu/.2023WaterCode.readonly/fishROS_ws/src/examples/rclcpp/wait_set/src/wait_set_random_order.cpp
+[4.378s] 3: 
+[4.378s] 3: Done processing /home/ubuntu/.2023WaterCode.readonly/fishROS_ws/src/examples/rclcpp/wait_set/src/wait_set_topics_and_timer.cpp
+[4.379s] 3: 
+[4.379s] 3: Done processing /home/ubuntu/.2023WaterCode.readonly/fishROS_ws/src/examples/rclcpp/wait_set/src/wait_set_topics_with_different_rates.cpp
+[4.379s] 3: 
+[4.379s] 3: No problems found
+[4.387s] 3: -- run_test.py: return code 0
+[4.387s] 3: -- run_test.py: verify result file '/home/ubuntu/.2023WaterCode.readonly/fishROS_ws/build/examples_rclcpp_wait_set/test_results/examples_rclcpp_wait_set/cpplint.xunit.xml'
+[4.397s] 3/6 Test #3: cpplint ..........................   Passed    0.90 sec
+[4.397s] test 4
+[4.397s]     Start 4: lint_cmake
+[4.397s] 
+[4.398s] 4: Test command: /usr/bin/python3.10 "-u" "/opt/ros/humble/share/ament_cmake_test/cmake/run_test.py" "/home/ubuntu/.2023WaterCode.readonly/fishROS_ws/build/examples_rclcpp_wait_set/test_results/examples_rclcpp_wait_set/lint_cmake.xunit.xml" "--package-name" "examples_rclcpp_wait_set" "--output-file" "/home/ubuntu/.2023WaterCode.readonly/fishROS_ws/build/examples_rclcpp_wait_set/ament_lint_cmake/lint_cmake.txt" "--command" "/opt/ros/humble/bin/ament_lint_cmake" "--xunit-file" "/home/ubuntu/.2023WaterCode.readonly/fishROS_ws/build/examples_rclcpp_wait_set/test_results/examples_rclcpp_wait_set/lint_cmake.xunit.xml"
+[4.398s] 4: Test timeout computed to be: 60
+[4.462s] 4: -- run_test.py: invoking following command in '/home/ubuntu/.2023WaterCode.readonly/fishROS_ws/src/examples/rclcpp/wait_set':
+[4.462s] 4:  - /opt/ros/humble/bin/ament_lint_cmake --xunit-file /home/ubuntu/.2023WaterCode.readonly/fishROS_ws/build/examples_rclcpp_wait_set/test_results/examples_rclcpp_wait_set/lint_cmake.xunit.xml
+[4.554s] 4: 
+[4.555s] 4: No problems found
+[4.566s] 4: -- run_test.py: return code 0
+[4.566s] 4: -- run_test.py: verify result file '/home/ubuntu/.2023WaterCode.readonly/fishROS_ws/build/examples_rclcpp_wait_set/test_results/examples_rclcpp_wait_set/lint_cmake.xunit.xml'
+[4.577s] 4/6 Test #4: lint_cmake .......................   Passed    0.18 sec
+[4.577s] test 5
+[4.577s]     Start 5: uncrustify
+[4.578s] 
+[4.578s] 5: Test command: /usr/bin/python3.10 "-u" "/opt/ros/humble/share/ament_cmake_test/cmake/run_test.py" "/home/ubuntu/.2023WaterCode.readonly/fishROS_ws/build/examples_rclcpp_wait_set/test_results/examples_rclcpp_wait_set/uncrustify.xunit.xml" "--package-name" "examples_rclcpp_wait_set" "--output-file" "/home/ubuntu/.2023WaterCode.readonly/fishROS_ws/build/examples_rclcpp_wait_set/ament_uncrustify/uncrustify.txt" "--command" "/opt/ros/humble/bin/ament_uncrustify" "--xunit-file" "/home/ubuntu/.2023WaterCode.readonly/fishROS_ws/build/examples_rclcpp_wait_set/test_results/examples_rclcpp_wait_set/uncrustify.xunit.xml"
+[4.578s] 5: Test timeout computed to be: 60
+[4.642s] 5: -- run_test.py: invoking following command in '/home/ubuntu/.2023WaterCode.readonly/fishROS_ws/src/examples/rclcpp/wait_set':
+[4.642s] 5:  - /opt/ros/humble/bin/ament_uncrustify --xunit-file /home/ubuntu/.2023WaterCode.readonly/fishROS_ws/build/examples_rclcpp_wait_set/test_results/examples_rclcpp_wait_set/uncrustify.xunit.xml
+[4.748s] 5: No code style divergence in file 'include/wait_set/listener.hpp'
+[4.748s] 5: 
+[4.748s] 5: No code style divergence in file 'include/wait_set/random_listener.hpp'
+[4.748s] 5: 
+[4.748s] 5: No code style divergence in file 'include/wait_set/random_talker.hpp'
+[4.748s] 5: 
+[4.748s] 5: No code style divergence in file 'include/wait_set/talker.hpp'
+[4.748s] 5: 
+[4.748s] 5: No code style divergence in file 'include/wait_set/visibility.h'
+[4.748s] 5: 
+[4.748s] 5: No code style divergence in file 'src/executor_random_order.cpp'
+[4.748s] 5: 
+[4.748s] 5: No code style divergence in file 'src/listener.cpp'
+[4.748s] 5: 
+[4.749s] 5: No code style divergence in file 'src/static_wait_set.cpp'
+[4.749s] 5: 
+[4.749s] 5: No code style divergence in file 'src/talker.cpp'
+[4.749s] 5: 
+[4.749s] 5: No code style divergence in file 'src/thread_safe_wait_set.cpp'
+[4.749s] 5: 
+[4.749s] 5: No code style divergence in file 'src/wait_set.cpp'
+[4.749s] 5: 
+[4.749s] 5: No code style divergence in file 'src/wait_set_composed.cpp'
+[4.749s] 5: 
+[4.749s] 5: No code style divergence in file 'src/wait_set_random_order.cpp'
+[4.749s] 5: 
+[4.749s] 5: No code style divergence in file 'src/wait_set_topics_and_timer.cpp'
+[4.749s] 5: 
+[4.749s] 5: No code style divergence in file 'src/wait_set_topics_with_different_rates.cpp'
+[4.749s] 5: 
+[4.749s] 5: No problems found
+[4.759s] 5: -- run_test.py: return code 0
+[4.759s] 5: -- run_test.py: verify result file '/home/ubuntu/.2023WaterCode.readonly/fishROS_ws/build/examples_rclcpp_wait_set/test_results/examples_rclcpp_wait_set/uncrustify.xunit.xml'
+[4.771s] 5/6 Test #5: uncrustify .......................   Passed    0.19 sec
+[4.771s] test 6
+[4.771s]     Start 6: xmllint
+[4.771s] 
+[4.771s] 6: Test command: /usr/bin/python3.10 "-u" "/opt/ros/humble/share/ament_cmake_test/cmake/run_test.py" "/home/ubuntu/.2023WaterCode.readonly/fishROS_ws/build/examples_rclcpp_wait_set/test_results/examples_rclcpp_wait_set/xmllint.xunit.xml" "--package-name" "examples_rclcpp_wait_set" "--output-file" "/home/ubuntu/.2023WaterCode.readonly/fishROS_ws/build/examples_rclcpp_wait_set/ament_xmllint/xmllint.txt" "--command" "/opt/ros/humble/bin/ament_xmllint" "--xunit-file" "/home/ubuntu/.2023WaterCode.readonly/fishROS_ws/build/examples_rclcpp_wait_set/test_results/examples_rclcpp_wait_set/xmllint.xunit.xml"
+[4.771s] 6: Test timeout computed to be: 60
+[4.838s] 6: -- run_test.py: invoking following command in '/home/ubuntu/.2023WaterCode.readonly/fishROS_ws/src/examples/rclcpp/wait_set':
+[4.838s] 6:  - /opt/ros/humble/bin/ament_xmllint --xunit-file /home/ubuntu/.2023WaterCode.readonly/fishROS_ws/build/examples_rclcpp_wait_set/test_results/examples_rclcpp_wait_set/xmllint.xunit.xml
+[4.991s] 6: File 'package.xml' is valid
+[4.991s] 6: 
+[4.991s] 6: No problems found
+[5.005s] 6: -- run_test.py: return code 0
+[5.006s] 6: -- run_test.py: verify result file '/home/ubuntu/.2023WaterCode.readonly/fishROS_ws/build/examples_rclcpp_wait_set/test_results/examples_rclcpp_wait_set/xmllint.xunit.xml'
+[5.017s] 6/6 Test #6: xmllint ..........................   Passed    0.25 sec
+[5.017s] 
+[5.017s] [0;32m100% tests passed[0;0m, 0 tests failed[0;0m out of 6
+[5.017s] 
+[5.018s] Label Time Summary:
+[5.018s] copyright     =   0.83 sec*proc (1 test)
+[5.018s] cppcheck      =   0.33 sec*proc (1 test)
+[5.018s] cpplint       =   0.90 sec*proc (1 test)
+[5.018s] lint_cmake    =   0.18 sec*proc (1 test)
+[5.018s] linter        =   2.68 sec*proc (6 tests)
+[5.018s] uncrustify    =   0.19 sec*proc (1 test)
+[5.018s] xmllint       =   0.25 sec*proc (1 test)
+[5.018s] 
+[5.018s] Total Test time (real) =   2.69 sec
+[5.025s] Invoked command in '/home/ubuntu/.2023WaterCode.readonly/fishROS_ws/build/examples_rclcpp_wait_set' returned '0': AMENT_PREFIX_PATH=/home/ubuntu/.2023WaterCode.readonly/fishROS_ws/install/examples_rclcpp_wait_set:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/ubuntu/.2023WaterCode.readonly/fishROS_ws/install/examples_rclcpp_wait_set LD_LIBRARY_PATH=/home/ubuntu/.2023WaterCode.readonly/fishROS_ws/install/examples_rclcpp_wait_set/lib:${LD_LIBRARY_PATH} /usr/bin/ctest -C Release -D ExperimentalTest --no-compress-output -V --force-new-ctest-process

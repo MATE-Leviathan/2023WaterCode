@@ -1,0 +1,5 @@
+[01m[Kc++:[m[K [01;31m[Kfatal error: [m[KKilled signal terminated program cc1plus
+compilation terminated.
+gmake[2]: *** [CMakeFiles/multithreaded_executor.dir/build.make:76: CMakeFiles/multithreaded_executor.dir/multithreaded_executor.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/multithreaded_executor.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

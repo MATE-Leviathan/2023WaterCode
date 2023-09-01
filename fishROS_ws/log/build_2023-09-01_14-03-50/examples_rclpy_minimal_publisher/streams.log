@@ -1,0 +1,26 @@
+[0.483s] Invoking command in '/home/ubuntu/.2023WaterCode.readonly/fishROS_ws/build/examples_rclpy_minimal_publisher': PYTHONPATH=/home/ubuntu/.2023WaterCode.readonly/fishROS_ws/build/examples_rclpy_minimal_publisher/prefix_override:/home/ubuntu/.2023WaterCode.readonly/fishROS_ws/install/examples_rclpy_minimal_publisher/lib/python3.10/site-packages: /usr/bin/python3 setup.py develop --uninstall --editable --build-directory /home/ubuntu/.2023WaterCode.readonly/fishROS_ws/build/examples_rclpy_minimal_publisher/build
+[0.688s] running develop
+[0.774s] Invoked command in '/home/ubuntu/.2023WaterCode.readonly/fishROS_ws/build/examples_rclpy_minimal_publisher' returned '0': PYTHONPATH=/home/ubuntu/.2023WaterCode.readonly/fishROS_ws/build/examples_rclpy_minimal_publisher/prefix_override:/home/ubuntu/.2023WaterCode.readonly/fishROS_ws/install/examples_rclpy_minimal_publisher/lib/python3.10/site-packages: /usr/bin/python3 setup.py develop --uninstall --editable --build-directory /home/ubuntu/.2023WaterCode.readonly/fishROS_ws/build/examples_rclpy_minimal_publisher/build
+[0.776s] Invoking command in '/home/ubuntu/.2023WaterCode.readonly/fishROS_ws/src/examples/rclpy/topics/minimal_publisher': PYTHONPATH=/home/ubuntu/.2023WaterCode.readonly/fishROS_ws/build/examples_rclpy_minimal_publisher/prefix_override:/home/ubuntu/.2023WaterCode.readonly/fishROS_ws/install/examples_rclpy_minimal_publisher/lib/python3.10/site-packages: /usr/bin/python3 setup.py egg_info --egg-base ../../../../../build/examples_rclpy_minimal_publisher build --build-base /home/ubuntu/.2023WaterCode.readonly/fishROS_ws/build/examples_rclpy_minimal_publisher/build install --record /home/ubuntu/.2023WaterCode.readonly/fishROS_ws/build/examples_rclpy_minimal_publisher/install.log --single-version-externally-managed
+[0.960s] running egg_info
+[0.960s] writing ../../../../../build/examples_rclpy_minimal_publisher/examples_rclpy_minimal_publisher.egg-info/PKG-INFO
+[0.961s] writing dependency_links to ../../../../../build/examples_rclpy_minimal_publisher/examples_rclpy_minimal_publisher.egg-info/dependency_links.txt
+[0.961s] writing entry points to ../../../../../build/examples_rclpy_minimal_publisher/examples_rclpy_minimal_publisher.egg-info/entry_points.txt
+[0.961s] writing requirements to ../../../../../build/examples_rclpy_minimal_publisher/examples_rclpy_minimal_publisher.egg-info/requires.txt
+[0.961s] writing top-level names to ../../../../../build/examples_rclpy_minimal_publisher/examples_rclpy_minimal_publisher.egg-info/top_level.txt
+[0.974s] reading manifest file '../../../../../build/examples_rclpy_minimal_publisher/examples_rclpy_minimal_publisher.egg-info/SOURCES.txt'
+[0.975s] writing manifest file '../../../../../build/examples_rclpy_minimal_publisher/examples_rclpy_minimal_publisher.egg-info/SOURCES.txt'
+[0.975s] running build
+[0.975s] running build_py
+[0.976s] running install
+[0.976s] running install_lib
+[0.978s] running install_data
+[0.979s] running install_egg_info
+[0.980s] removing '/home/ubuntu/.2023WaterCode.readonly/fishROS_ws/install/examples_rclpy_minimal_publisher/lib/python3.10/site-packages/examples_rclpy_minimal_publisher-0.15.1-py3.10.egg-info' (and everything under it)
+[0.980s] Copying ../../../../../build/examples_rclpy_minimal_publisher/examples_rclpy_minimal_publisher.egg-info to /home/ubuntu/.2023WaterCode.readonly/fishROS_ws/install/examples_rclpy_minimal_publisher/lib/python3.10/site-packages/examples_rclpy_minimal_publisher-0.15.1-py3.10.egg-info
+[0.981s] running install_scripts
+[1.002s] Installing publisher_local_function script to /home/ubuntu/.2023WaterCode.readonly/fishROS_ws/install/examples_rclpy_minimal_publisher/lib/examples_rclpy_minimal_publisher
+[1.002s] Installing publisher_member_function script to /home/ubuntu/.2023WaterCode.readonly/fishROS_ws/install/examples_rclpy_minimal_publisher/lib/examples_rclpy_minimal_publisher
+[1.002s] Installing publisher_old_school script to /home/ubuntu/.2023WaterCode.readonly/fishROS_ws/install/examples_rclpy_minimal_publisher/lib/examples_rclpy_minimal_publisher
+[1.003s] writing list of installed files to '/home/ubuntu/.2023WaterCode.readonly/fishROS_ws/build/examples_rclpy_minimal_publisher/install.log'
+[1.028s] Invoked command in '/home/ubuntu/.2023WaterCode.readonly/fishROS_ws/src/examples/rclpy/topics/minimal_publisher' returned '0': PYTHONPATH=/home/ubuntu/.2023WaterCode.readonly/fishROS_ws/build/examples_rclpy_minimal_publisher/prefix_override:/home/ubuntu/.2023WaterCode.readonly/fishROS_ws/install/examples_rclpy_minimal_publisher/lib/python3.10/site-packages: /usr/bin/python3 setup.py egg_info --egg-base ../../../../../build/examples_rclpy_minimal_publisher build --build-base /home/ubuntu/.2023WaterCode.readonly/fishROS_ws/build/examples_rclpy_minimal_publisher/build install --record /home/ubuntu/.2023WaterCode.readonly/fishROS_ws/build/examples_rclpy_minimal_publisher/install.log --single-version-externally-managed

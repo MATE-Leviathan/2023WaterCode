@@ -1,0 +1,31 @@
+[0.219s] Invoking command in '/home/ubuntu/.2023WaterCode.readonly/fishROS_ws/build/examples_rclcpp_async_client': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/ubuntu/.2023WaterCode.readonly/fishROS_ws/src/examples/rclcpp/services/async_client -DCMAKE_INSTALL_PREFIX=/home/ubuntu/.2023WaterCode.readonly/fishROS_ws/install/examples_rclcpp_async_client
+[4.244s] -- Found ament_cmake: 1.3.5 (/opt/ros/humble/share/ament_cmake/cmake)
+[4.244s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[4.244s] -- Found example_interfaces: 0.9.3 (/opt/ros/humble/share/example_interfaces/cmake)
+[4.244s] -- Found rosidl_generator_c: 3.1.5 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[4.245s] -- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[4.245s] -- Found rosidl_generator_cpp: 3.1.5 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[4.245s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[4.245s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[4.245s] -- Found rclcpp: 16.0.5 (/opt/ros/humble/share/rclcpp/cmake)
+[4.245s] -- Found rmw_implementation_cmake: 6.1.1 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[4.245s] -- Found rmw_fastrtps_cpp: 6.2.3 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[4.245s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[4.245s] -- Found ament_lint_auto: 0.12.7 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[4.246s] -- Added test 'copyright' to check source files copyright and LICENSE
+[4.247s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[4.247s] -- Configured cppcheck include dirs: 
+[4.247s] -- Configured cppcheck exclude dirs and/or files: 
+[4.247s] -- Added test 'cpplint' to check C / C++ code against the Google style
+[4.247s] -- Configured cpplint exclude dirs and/or files: 
+[4.248s] -- Added test 'lint_cmake' to check CMake code style
+[4.248s] -- Added test 'uncrustify' to check C / C++ code style
+[4.248s] -- Configured uncrustify additional arguments: 
+[4.248s] -- Added test 'xmllint' to check XML markup files
+[4.249s] -- Configuring done
+[4.249s] -- Generating done
+[4.249s] -- Build files have been written to: /home/ubuntu/.2023WaterCode.readonly/fishROS_ws/build/examples_rclcpp_async_client
+[4.395s] Invoked command in '/home/ubuntu/.2023WaterCode.readonly/fishROS_ws/build/examples_rclcpp_async_client' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/ubuntu/.2023WaterCode.readonly/fishROS_ws/src/examples/rclcpp/services/async_client -DCMAKE_INSTALL_PREFIX=/home/ubuntu/.2023WaterCode.readonly/fishROS_ws/install/examples_rclcpp_async_client
+[4.396s] Invoking command in '/home/ubuntu/.2023WaterCode.readonly/fishROS_ws/build/examples_rclcpp_async_client': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/ubuntu/.2023WaterCode.readonly/fishROS_ws/build/examples_rclcpp_async_client -- -j20 -l20
+[4.653s] [ 50%] [32mBuilding CXX object CMakeFiles/client_main.dir/main.cpp.o[0m
+[156.989s] [100%] [32m[1mLinking CXX executable client_main[0m

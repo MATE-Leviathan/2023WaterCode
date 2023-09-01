@@ -1,0 +1,83 @@
+[0.008s] Invoking command in '/home/ubuntu/.2023WaterCode.readonly/fishROS_ws/build/examples_rclcpp_minimal_subscriber': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/ubuntu/.2023WaterCode.readonly/fishROS_ws/src/examples/rclcpp/topics/minimal_subscriber -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/ubuntu/.2023WaterCode.readonly/fishROS_ws/install/examples_rclcpp_minimal_subscriber
+[0.025s] -- Found ament_cmake: 1.3.5 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.193s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[0.201s] -- Found rclcpp: 16.0.5 (/opt/ros/humble/share/rclcpp/cmake)
+[0.235s] -- Found rosidl_generator_c: 3.1.5 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[0.238s] -- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.245s] -- Found rosidl_generator_cpp: 3.1.5 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[0.257s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.274s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.340s] -- Found rmw_implementation_cmake: 6.1.1 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[0.341s] -- Found rmw_fastrtps_cpp: 6.2.3 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[0.510s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[0.689s] -- Found rclcpp_components: 16.0.5 (/opt/ros/humble/share/rclcpp_components/cmake)
+[0.779s] -- Found ament_lint_auto: 0.12.7 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[0.856s] -- Added test 'copyright' to check source files copyright and LICENSE
+[0.857s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[0.857s] -- Configured cppcheck include dirs: 
+[0.857s] -- Configured cppcheck exclude dirs and/or files: 
+[0.858s] -- Added test 'cpplint' to check C / C++ code against the Google style
+[0.858s] -- Configured cpplint exclude dirs and/or files: 
+[0.858s] -- Added test 'lint_cmake' to check CMake code style
+[0.859s] -- Added test 'uncrustify' to check C / C++ code style
+[0.859s] -- Configured uncrustify additional arguments: 
+[0.860s] -- Added test 'xmllint' to check XML markup files
+[0.861s] -- Configuring done
+[0.902s] -- Generating done
+[0.905s] -- Build files have been written to: /home/ubuntu/.2023WaterCode.readonly/fishROS_ws/build/examples_rclcpp_minimal_subscriber
+[0.916s] Invoked command in '/home/ubuntu/.2023WaterCode.readonly/fishROS_ws/build/examples_rclcpp_minimal_subscriber' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/ubuntu/.2023WaterCode.readonly/fishROS_ws/src/examples/rclcpp/topics/minimal_subscriber -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/ubuntu/.2023WaterCode.readonly/fishROS_ws/install/examples_rclcpp_minimal_subscriber
+[0.916s] Invoking command in '/home/ubuntu/.2023WaterCode.readonly/fishROS_ws/build/examples_rclcpp_minimal_subscriber': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/ubuntu/.2023WaterCode.readonly/fishROS_ws/build/examples_rclcpp_minimal_subscriber -- -j20 -l20
+[0.967s] [35m[1mConsolidate compiler generated dependencies of target subscriber_lambda[0m
+[0.968s] [35m[1mConsolidate compiler generated dependencies of target subscriber_member_function_with_topic_statistics[0m
+[0.968s] [35m[1mConsolidate compiler generated dependencies of target subscriber_member_function_with_type_adapter[0m
+[0.969s] [35m[1mConsolidate compiler generated dependencies of target subscriber_member_function[0m
+[0.970s] [35m[1mConsolidate compiler generated dependencies of target wait_set_subscriber[0m
+[0.975s] [35m[1mConsolidate compiler generated dependencies of target subscriber_member_function_with_unique_network_flow_endpoints[0m
+[0.975s] [35m[1mConsolidate compiler generated dependencies of target subscriber_not_composable[0m
+[0.975s] [35m[1mConsolidate compiler generated dependencies of target subscriber_content_filtering[0m
+[0.977s] [35m[1mConsolidate compiler generated dependencies of target static_wait_set_subscriber[0m
+[0.977s] [35m[1mConsolidate compiler generated dependencies of target wait_set_subscriber_library[0m
+[0.979s] [35m[1mConsolidate compiler generated dependencies of target time_triggered_wait_set_subscriber[0m
+[1.002s] [  8%] Built target wait_set_subscriber
+[1.003s] [ 16%] Built target subscriber_lambda
+[1.006s] [ 25%] Built target subscriber_member_function
+[1.006s] [ 33%] Built target subscriber_member_function_with_topic_statistics
+[1.006s] [ 41%] Built target subscriber_member_function_with_type_adapter
+[1.010s] [ 50%] Built target subscriber_member_function_with_unique_network_flow_endpoints
+[1.011s] [ 58%] Built target subscriber_not_composable
+[1.013s] [ 66%] Built target subscriber_content_filtering
+[1.016s] [ 75%] Built target time_triggered_wait_set_subscriber
+[1.018s] [ 83%] Built target static_wait_set_subscriber
+[1.019s] [100%] Built target wait_set_subscriber_library
+[1.032s] Invoked command in '/home/ubuntu/.2023WaterCode.readonly/fishROS_ws/build/examples_rclcpp_minimal_subscriber' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/ubuntu/.2023WaterCode.readonly/fishROS_ws/build/examples_rclcpp_minimal_subscriber -- -j20 -l20
+[1.122s] Invoking command in '/home/ubuntu/.2023WaterCode.readonly/fishROS_ws/build/examples_rclcpp_minimal_subscriber': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/ubuntu/.2023WaterCode.readonly/fishROS_ws/build/examples_rclcpp_minimal_subscriber
+[1.131s] -- Install configuration: ""
+[1.132s] -- Execute custom install script
+[1.132s] -- Up-to-date symlink: /home/ubuntu/.2023WaterCode.readonly/fishROS_ws/install/examples_rclcpp_minimal_subscriber/lib/examples_rclcpp_minimal_subscriber/wait_set_subscriber
+[1.132s] -- Up-to-date symlink: /home/ubuntu/.2023WaterCode.readonly/fishROS_ws/install/examples_rclcpp_minimal_subscriber/lib/examples_rclcpp_minimal_subscriber/static_wait_set_subscriber
+[1.133s] -- Up-to-date symlink: /home/ubuntu/.2023WaterCode.readonly/fishROS_ws/install/examples_rclcpp_minimal_subscriber/lib/examples_rclcpp_minimal_subscriber/time_triggered_wait_set_subscriber
+[1.133s] -- Up-to-date symlink: /home/ubuntu/.2023WaterCode.readonly/fishROS_ws/install/examples_rclcpp_minimal_subscriber/lib/libwait_set_subscriber_library.so
+[1.133s] -- Up-to-date symlink: /home/ubuntu/.2023WaterCode.readonly/fishROS_ws/install/examples_rclcpp_minimal_subscriber/lib/examples_rclcpp_minimal_subscriber/subscriber_lambda
+[1.133s] -- Up-to-date symlink: /home/ubuntu/.2023WaterCode.readonly/fishROS_ws/install/examples_rclcpp_minimal_subscriber/lib/examples_rclcpp_minimal_subscriber/subscriber_member_function
+[1.133s] -- Up-to-date symlink: /home/ubuntu/.2023WaterCode.readonly/fishROS_ws/install/examples_rclcpp_minimal_subscriber/lib/examples_rclcpp_minimal_subscriber/subscriber_member_function_with_topic_statistics
+[1.134s] -- Up-to-date symlink: /home/ubuntu/.2023WaterCode.readonly/fishROS_ws/install/examples_rclcpp_minimal_subscriber/lib/examples_rclcpp_minimal_subscriber/subscriber_member_function_with_type_adapter
+[1.134s] -- Up-to-date symlink: /home/ubuntu/.2023WaterCode.readonly/fishROS_ws/install/examples_rclcpp_minimal_subscriber/lib/examples_rclcpp_minimal_subscriber/subscriber_member_function_with_unique_network_flow_endpoints
+[1.134s] -- Up-to-date symlink: /home/ubuntu/.2023WaterCode.readonly/fishROS_ws/install/examples_rclcpp_minimal_subscriber/lib/examples_rclcpp_minimal_subscriber/subscriber_not_composable
+[1.134s] -- Up-to-date symlink: /home/ubuntu/.2023WaterCode.readonly/fishROS_ws/install/examples_rclcpp_minimal_subscriber/lib/examples_rclcpp_minimal_subscriber/subscriber_content_filtering
+[1.134s] -- Up-to-date symlink: /home/ubuntu/.2023WaterCode.readonly/fishROS_ws/install/examples_rclcpp_minimal_subscriber/share/ament_index/resource_index/package_run_dependencies/examples_rclcpp_minimal_subscriber
+[1.134s] -- Up-to-date symlink: /home/ubuntu/.2023WaterCode.readonly/fishROS_ws/install/examples_rclcpp_minimal_subscriber/share/ament_index/resource_index/parent_prefix_path/examples_rclcpp_minimal_subscriber
+[1.135s] -- Up-to-date symlink: /home/ubuntu/.2023WaterCode.readonly/fishROS_ws/install/examples_rclcpp_minimal_subscriber/share/examples_rclcpp_minimal_subscriber/environment/ament_prefix_path.sh
+[1.135s] -- Up-to-date symlink: /home/ubuntu/.2023WaterCode.readonly/fishROS_ws/install/examples_rclcpp_minimal_subscriber/share/examples_rclcpp_minimal_subscriber/environment/ament_prefix_path.dsv
+[1.135s] -- Up-to-date symlink: /home/ubuntu/.2023WaterCode.readonly/fishROS_ws/install/examples_rclcpp_minimal_subscriber/share/examples_rclcpp_minimal_subscriber/environment/path.sh
+[1.135s] -- Up-to-date symlink: /home/ubuntu/.2023WaterCode.readonly/fishROS_ws/install/examples_rclcpp_minimal_subscriber/share/examples_rclcpp_minimal_subscriber/environment/path.dsv
+[1.135s] -- Up-to-date symlink: /home/ubuntu/.2023WaterCode.readonly/fishROS_ws/install/examples_rclcpp_minimal_subscriber/share/examples_rclcpp_minimal_subscriber/local_setup.bash
+[1.136s] -- Up-to-date symlink: /home/ubuntu/.2023WaterCode.readonly/fishROS_ws/install/examples_rclcpp_minimal_subscriber/share/examples_rclcpp_minimal_subscriber/local_setup.sh
+[1.136s] -- Up-to-date symlink: /home/ubuntu/.2023WaterCode.readonly/fishROS_ws/install/examples_rclcpp_minimal_subscriber/share/examples_rclcpp_minimal_subscriber/local_setup.zsh
+[1.136s] -- Up-to-date symlink: /home/ubuntu/.2023WaterCode.readonly/fishROS_ws/install/examples_rclcpp_minimal_subscriber/share/examples_rclcpp_minimal_subscriber/local_setup.dsv
+[1.136s] -- Symlinking: /home/ubuntu/.2023WaterCode.readonly/fishROS_ws/install/examples_rclcpp_minimal_subscriber/share/examples_rclcpp_minimal_subscriber/package.dsv
+[1.147s] -- Up-to-date symlink: /home/ubuntu/.2023WaterCode.readonly/fishROS_ws/install/examples_rclcpp_minimal_subscriber/share/ament_index/resource_index/packages/examples_rclcpp_minimal_subscriber
+[1.148s] -- Up-to-date symlink: /home/ubuntu/.2023WaterCode.readonly/fishROS_ws/install/examples_rclcpp_minimal_subscriber/share/ament_index/resource_index/rclcpp_components/examples_rclcpp_minimal_subscriber
+[1.148s] -- Up-to-date symlink: /home/ubuntu/.2023WaterCode.readonly/fishROS_ws/install/examples_rclcpp_minimal_subscriber/share/examples_rclcpp_minimal_subscriber/cmake/examples_rclcpp_minimal_subscriberConfig.cmake
+[1.148s] -- Up-to-date symlink: /home/ubuntu/.2023WaterCode.readonly/fishROS_ws/install/examples_rclcpp_minimal_subscriber/share/examples_rclcpp_minimal_subscriber/cmake/examples_rclcpp_minimal_subscriberConfig-version.cmake
+[1.148s] -- Up-to-date symlink: /home/ubuntu/.2023WaterCode.readonly/fishROS_ws/install/examples_rclcpp_minimal_subscriber/share/examples_rclcpp_minimal_subscriber/package.xml
+[1.169s] Invoked command in '/home/ubuntu/.2023WaterCode.readonly/fishROS_ws/build/examples_rclcpp_minimal_subscriber' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/ubuntu/.2023WaterCode.readonly/fishROS_ws/build/examples_rclcpp_minimal_subscriber

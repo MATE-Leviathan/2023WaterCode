@@ -1,0 +1,37 @@
+[0.143s] Invoking command in '/home/ubuntu/.2023WaterCode.readonly/fishROS_ws/build/examples_rclcpp_wait_set': /usr/bin/cmake --build /home/ubuntu/.2023WaterCode.readonly/fishROS_ws/build/examples_rclcpp_wait_set -- -j20 -l20
+[13.719s] [  4%] [32mBuilding CXX object CMakeFiles/talker.dir/src/talker.cpp.o[0m
+[13.720s] [  8%] [32mBuilding CXX object CMakeFiles/wait_set_talker.dir/rclcpp_components/node_main_wait_set_talker.cpp.o[0m
+[13.721s] [ 12%] [32mBuilding CXX object CMakeFiles/thread_safe_wait_set.dir/src/thread_safe_wait_set.cpp.o[0m
+[13.721s] [ 16%] [32mBuilding CXX object CMakeFiles/static_wait_set.dir/src/static_wait_set.cpp.o[0m
+[13.721s] [ 20%] [32mBuilding CXX object CMakeFiles/wait_set_topics_and_timer.dir/src/wait_set_topics_and_timer.cpp.o[0m
+[13.721s] [ 25%] [32mBuilding CXX object CMakeFiles/wait_set_topics_with_different_rates.dir/src/wait_set_topics_with_different_rates.cpp.o[0m
+[13.721s] [ 29%] [32mBuilding CXX object CMakeFiles/executor_random_order.dir/src/executor_random_order.cpp.o[0m
+[13.722s] [ 33%] [32mBuilding CXX object CMakeFiles/wait_set_listener.dir/rclcpp_components/node_main_wait_set_listener.cpp.o[0m
+[13.722s] [ 45%] [32mBuilding CXX object CMakeFiles/wait_set.dir/src/wait_set.cpp.o[0m
+[13.722s] [ 37%] [32mBuilding CXX object CMakeFiles/wait_set_random_order.dir/src/wait_set_random_order.cpp.o[0m
+[13.722s] [ 41%] [32mBuilding CXX object CMakeFiles/listener.dir/src/listener.cpp.o[0m
+[82.637s] [ 50%] [32m[1mLinking CXX executable wait_set_listener[0m
+[83.926s] [ 50%] Built target wait_set_listener
+[113.312s] [ 54%] [32m[1mLinking CXX shared library libtalker.so[0m
+[113.411s] [ 58%] [32m[1mLinking CXX executable wait_set_talker[0m
+[113.882s] [ 58%] Built target talker
+[113.913s] [ 58%] Built target wait_set_talker
+[126.678s] [ 62%] [32m[1mLinking CXX executable wait_set_topics_and_timer[0m
+[127.220s] [ 66%] [32m[1mLinking CXX executable executor_random_order[0m
+[127.435s] [ 66%] Built target wait_set_topics_and_timer
+[127.437s] [ 70%] [32m[1mLinking CXX executable wait_set_random_order[0m
+[127.634s] [ 75%] [32m[1mLinking CXX executable thread_safe_wait_set[0m
+[127.830s] [ 79%] [32m[1mLinking CXX executable static_wait_set[0m
+[127.897s] [ 83%] [32m[1mLinking CXX shared library liblistener.so[0m
+[128.181s] [ 83%] Built target wait_set_random_order
+[128.189s] [ 83%] Built target executor_random_order
+[128.392s] [ 83%] Built target static_wait_set
+[128.443s] [ 83%] Built target listener
+[128.462s] [ 87%] [32m[1mLinking CXX executable wait_set[0m
+[128.524s] [ 87%] Built target thread_safe_wait_set
+[128.750s] [ 91%] [32m[1mLinking CXX executable wait_set_topics_with_different_rates[0m
+[128.932s] [ 91%] Built target wait_set
+[129.168s] [ 91%] Built target wait_set_topics_with_different_rates
+[129.190s] [ 95%] [32mBuilding CXX object CMakeFiles/wait_set_composed.dir/src/wait_set_composed.cpp.o[0m
+[131.998s] [100%] [32m[1mLinking CXX executable wait_set_composed[0m
+[132.216s] [100%] Built target wait_set_composed

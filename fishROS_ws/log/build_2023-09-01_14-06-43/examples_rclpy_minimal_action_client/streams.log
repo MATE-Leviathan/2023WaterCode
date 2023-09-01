@@ -1,0 +1,20 @@
+[0.632s] Invoking command in '/home/ubuntu/.2023WaterCode.readonly/fishROS_ws/build/examples_rclpy_minimal_action_client': PYTHONPATH=/home/ubuntu/.2023WaterCode.readonly/fishROS_ws/build/examples_rclpy_minimal_action_client/prefix_override:/home/ubuntu/.2023WaterCode.readonly/fishROS_ws/install/examples_rclpy_minimal_action_client/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --editable --build-directory /home/ubuntu/.2023WaterCode.readonly/fishROS_ws/build/examples_rclpy_minimal_action_client/build --no-deps install_data
+[0.894s] running develop
+[1.030s] running egg_info
+[1.030s] writing examples_rclpy_minimal_action_client.egg-info/PKG-INFO
+[1.030s] writing dependency_links to examples_rclpy_minimal_action_client.egg-info/dependency_links.txt
+[1.030s] writing entry points to examples_rclpy_minimal_action_client.egg-info/entry_points.txt
+[1.030s] writing requirements to examples_rclpy_minimal_action_client.egg-info/requires.txt
+[1.031s] writing top-level names to examples_rclpy_minimal_action_client.egg-info/top_level.txt
+[1.032s] reading manifest file 'examples_rclpy_minimal_action_client.egg-info/SOURCES.txt'
+[1.034s] writing manifest file 'examples_rclpy_minimal_action_client.egg-info/SOURCES.txt'
+[1.035s] running build_ext
+[1.035s] Creating /home/ubuntu/.2023WaterCode.readonly/fishROS_ws/install/examples_rclpy_minimal_action_client/lib/python3.10/site-packages/examples-rclpy-minimal-action-client.egg-link (link to .)
+[1.036s] Installing client script to /home/ubuntu/.2023WaterCode.readonly/fishROS_ws/install/examples_rclpy_minimal_action_client/lib/examples_rclpy_minimal_action_client
+[1.036s] Installing client_asyncio script to /home/ubuntu/.2023WaterCode.readonly/fishROS_ws/install/examples_rclpy_minimal_action_client/lib/examples_rclpy_minimal_action_client
+[1.036s] Installing client_cancel script to /home/ubuntu/.2023WaterCode.readonly/fishROS_ws/install/examples_rclpy_minimal_action_client/lib/examples_rclpy_minimal_action_client
+[1.037s] Installing client_not_composable script to /home/ubuntu/.2023WaterCode.readonly/fishROS_ws/install/examples_rclpy_minimal_action_client/lib/examples_rclpy_minimal_action_client
+[1.037s] 
+[1.037s] Installed /home/ubuntu/.2023WaterCode.readonly/fishROS_ws/build/examples_rclpy_minimal_action_client
+[1.037s] running install_data
+[1.065s] Invoked command in '/home/ubuntu/.2023WaterCode.readonly/fishROS_ws/build/examples_rclpy_minimal_action_client' returned '0': PYTHONPATH=/home/ubuntu/.2023WaterCode.readonly/fishROS_ws/build/examples_rclpy_minimal_action_client/prefix_override:/home/ubuntu/.2023WaterCode.readonly/fishROS_ws/install/examples_rclpy_minimal_action_client/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --editable --build-directory /home/ubuntu/.2023WaterCode.readonly/fishROS_ws/build/examples_rclpy_minimal_action_client/build --no-deps install_data

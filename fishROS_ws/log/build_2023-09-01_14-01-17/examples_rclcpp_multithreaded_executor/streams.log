@@ -1,0 +1,8 @@
+[0.140s] Invoking command in '/home/ubuntu/.2023WaterCode.readonly/fishROS_ws/build/examples_rclcpp_multithreaded_executor': /usr/bin/cmake --build /home/ubuntu/.2023WaterCode.readonly/fishROS_ws/build/examples_rclcpp_multithreaded_executor -- -j20 -l20
+[13.647s] [ 50%] [32mBuilding CXX object CMakeFiles/multithreaded_executor.dir/multithreaded_executor.cpp.o[0m
+[91.222s] [01m[Kc++:[m[K [01;31m[Kfatal error: [m[KKilled signal terminated program cc1plus
+[91.224s] compilation terminated.
+[91.227s] gmake[2]: *** [CMakeFiles/multithreaded_executor.dir/build.make:76: CMakeFiles/multithreaded_executor.dir/multithreaded_executor.cpp.o] Error 1
+[91.235s] gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/multithreaded_executor.dir/all] Error 2
+[91.243s] gmake: *** [Makefile:146: all] Error 2
+[91.336s] Invoked command in '/home/ubuntu/.2023WaterCode.readonly/fishROS_ws/build/examples_rclcpp_multithreaded_executor' returned '2': /usr/bin/cmake --build /home/ubuntu/.2023WaterCode.readonly/fishROS_ws/build/examples_rclcpp_multithreaded_executor -- -j20 -l20

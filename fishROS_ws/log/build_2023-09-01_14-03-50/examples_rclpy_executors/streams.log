@@ -1,0 +1,29 @@
+[0.513s] Invoking command in '/home/ubuntu/.2023WaterCode.readonly/fishROS_ws/build/examples_rclpy_executors': PYTHONPATH=/home/ubuntu/.2023WaterCode.readonly/fishROS_ws/build/examples_rclpy_executors/prefix_override:/home/ubuntu/.2023WaterCode.readonly/fishROS_ws/install/examples_rclpy_executors/lib/python3.10/site-packages: /usr/bin/python3 setup.py develop --uninstall --editable --build-directory /home/ubuntu/.2023WaterCode.readonly/fishROS_ws/build/examples_rclpy_executors/build
+[0.719s] running develop
+[0.805s] Invoked command in '/home/ubuntu/.2023WaterCode.readonly/fishROS_ws/build/examples_rclpy_executors' returned '0': PYTHONPATH=/home/ubuntu/.2023WaterCode.readonly/fishROS_ws/build/examples_rclpy_executors/prefix_override:/home/ubuntu/.2023WaterCode.readonly/fishROS_ws/install/examples_rclpy_executors/lib/python3.10/site-packages: /usr/bin/python3 setup.py develop --uninstall --editable --build-directory /home/ubuntu/.2023WaterCode.readonly/fishROS_ws/build/examples_rclpy_executors/build
+[0.807s] Invoking command in '/home/ubuntu/.2023WaterCode.readonly/fishROS_ws/src/examples/rclpy/executors': PYTHONPATH=/home/ubuntu/.2023WaterCode.readonly/fishROS_ws/build/examples_rclpy_executors/prefix_override:/home/ubuntu/.2023WaterCode.readonly/fishROS_ws/install/examples_rclpy_executors/lib/python3.10/site-packages: /usr/bin/python3 setup.py egg_info --egg-base ../../../../build/examples_rclpy_executors build --build-base /home/ubuntu/.2023WaterCode.readonly/fishROS_ws/build/examples_rclpy_executors/build install --record /home/ubuntu/.2023WaterCode.readonly/fishROS_ws/build/examples_rclpy_executors/install.log --single-version-externally-managed
+[0.991s] running egg_info
+[0.992s] writing ../../../../build/examples_rclpy_executors/examples_rclpy_executors.egg-info/PKG-INFO
+[0.992s] writing dependency_links to ../../../../build/examples_rclpy_executors/examples_rclpy_executors.egg-info/dependency_links.txt
+[0.992s] writing entry points to ../../../../build/examples_rclpy_executors/examples_rclpy_executors.egg-info/entry_points.txt
+[0.992s] writing requirements to ../../../../build/examples_rclpy_executors/examples_rclpy_executors.egg-info/requires.txt
+[0.992s] writing top-level names to ../../../../build/examples_rclpy_executors/examples_rclpy_executors.egg-info/top_level.txt
+[1.007s] reading manifest file '../../../../build/examples_rclpy_executors/examples_rclpy_executors.egg-info/SOURCES.txt'
+[1.008s] writing manifest file '../../../../build/examples_rclpy_executors/examples_rclpy_executors.egg-info/SOURCES.txt'
+[1.008s] running build
+[1.008s] running build_py
+[1.009s] running install
+[1.009s] running install_lib
+[1.011s] running install_data
+[1.011s] running install_egg_info
+[1.013s] removing '/home/ubuntu/.2023WaterCode.readonly/fishROS_ws/install/examples_rclpy_executors/lib/python3.10/site-packages/examples_rclpy_executors-0.15.1-py3.10.egg-info' (and everything under it)
+[1.014s] Copying ../../../../build/examples_rclpy_executors/examples_rclpy_executors.egg-info to /home/ubuntu/.2023WaterCode.readonly/fishROS_ws/install/examples_rclpy_executors/lib/python3.10/site-packages/examples_rclpy_executors-0.15.1-py3.10.egg-info
+[1.014s] running install_scripts
+[1.036s] Installing callback_group script to /home/ubuntu/.2023WaterCode.readonly/fishROS_ws/install/examples_rclpy_executors/lib/examples_rclpy_executors
+[1.036s] Installing composed script to /home/ubuntu/.2023WaterCode.readonly/fishROS_ws/install/examples_rclpy_executors/lib/examples_rclpy_executors
+[1.036s] Installing custom_callback_group script to /home/ubuntu/.2023WaterCode.readonly/fishROS_ws/install/examples_rclpy_executors/lib/examples_rclpy_executors
+[1.036s] Installing custom_executor script to /home/ubuntu/.2023WaterCode.readonly/fishROS_ws/install/examples_rclpy_executors/lib/examples_rclpy_executors
+[1.036s] Installing listener script to /home/ubuntu/.2023WaterCode.readonly/fishROS_ws/install/examples_rclpy_executors/lib/examples_rclpy_executors
+[1.036s] Installing talker script to /home/ubuntu/.2023WaterCode.readonly/fishROS_ws/install/examples_rclpy_executors/lib/examples_rclpy_executors
+[1.036s] writing list of installed files to '/home/ubuntu/.2023WaterCode.readonly/fishROS_ws/build/examples_rclpy_executors/install.log'
+[1.061s] Invoked command in '/home/ubuntu/.2023WaterCode.readonly/fishROS_ws/src/examples/rclpy/executors' returned '0': PYTHONPATH=/home/ubuntu/.2023WaterCode.readonly/fishROS_ws/build/examples_rclpy_executors/prefix_override:/home/ubuntu/.2023WaterCode.readonly/fishROS_ws/install/examples_rclpy_executors/lib/python3.10/site-packages: /usr/bin/python3 setup.py egg_info --egg-base ../../../../build/examples_rclpy_executors build --build-base /home/ubuntu/.2023WaterCode.readonly/fishROS_ws/build/examples_rclpy_executors/build install --record /home/ubuntu/.2023WaterCode.readonly/fishROS_ws/build/examples_rclpy_executors/install.log --single-version-externally-managed

@@ -1,0 +1,8 @@
+-- run_test.py: invoking following command in '/home/ubuntu/.2023WaterCode.readonly/fishROS_ws/src/examples/rclcpp/services/async_client':
+ - /opt/ros/humble/bin/ament_copyright --xunit-file /home/ubuntu/.2023WaterCode.readonly/fishROS_ws/build/examples_rclcpp_async_client/test_results/examples_rclcpp_async_client/copyright.xunit.xml
+
+No problems found, checked 1 files
+
+
+-- run_test.py: return code 0
+-- run_test.py: verify result file '/home/ubuntu/.2023WaterCode.readonly/fishROS_ws/build/examples_rclcpp_async_client/test_results/examples_rclcpp_async_client/copyright.xunit.xml'

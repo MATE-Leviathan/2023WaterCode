@@ -1,0 +1,24 @@
+FROM osrf/ros:humble-desktop
+
+ENV NVIDIA_VISIBLE_DEVICES \
+    ${NVIDIA_VISIBLE_DEVICES:-all}
+ENV NVIDIA_DRIVER_CAPABILITIES \
+    ${NVIDIA_DRIVER_CAPABILITIES:+$NVIDIA_DRIVER_CAPABILITIES,}graphics
+ENV DEBIAN_FRONTEND="noninteractive"
+
+MAINTAINER FRC Team 900
+# Adding #--------- lines between things which might be separate intermediate images?
+USER root
+RUN chsh -s /bin/bash root
+
+# Override the ROS ros_entrypoint.sh since it sets up native
+# build by default. We instead want to pick either cross or native
+# builds from the command line.
+WORKDIR /home/ubuntu
+
+# Entrypoint.sh uses bindfs to mount a copy of the source tree 
+# with owner ubuntu:ubuntu rather than whatever the user is 
+# in the host OS
+COPY ./files/entrypoint.sh /
+RUN chmod a+x /entrypoint.sh
+ENTRYPOINT ["/entrypoint.sh"]

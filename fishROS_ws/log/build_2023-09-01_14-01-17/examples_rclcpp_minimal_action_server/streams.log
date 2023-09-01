@@ -1,0 +1,7 @@
+[0.135s] Invoking command in '/home/ubuntu/.2023WaterCode.readonly/fishROS_ws/build/examples_rclcpp_minimal_action_server': /usr/bin/cmake --build /home/ubuntu/.2023WaterCode.readonly/fishROS_ws/build/examples_rclcpp_minimal_action_server -- -j20 -l20
+[13.604s] [ 25%] [32mBuilding CXX object CMakeFiles/action_server_member_functions.dir/member_functions.cpp.o[0m
+[13.605s] [ 50%] [32mBuilding CXX object CMakeFiles/action_server_not_composable.dir/not_composable.cpp.o[0m
+[112.618s] [ 75%] [32m[1mLinking CXX executable action_server_member_functions[0m
+[114.131s] [ 75%] Built target action_server_member_functions
+[116.326s] [100%] [32m[1mLinking CXX executable action_server_not_composable[0m
+[116.766s] [100%] Built target action_server_not_composable

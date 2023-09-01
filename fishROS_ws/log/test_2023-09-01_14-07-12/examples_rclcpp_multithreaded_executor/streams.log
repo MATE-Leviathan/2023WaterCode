@@ -1,0 +1,105 @@
+[2.317s] Invoking command in '/home/ubuntu/.2023WaterCode.readonly/fishROS_ws/build/examples_rclcpp_multithreaded_executor': AMENT_PREFIX_PATH=/home/ubuntu/.2023WaterCode.readonly/fishROS_ws/install/examples_rclcpp_multithreaded_executor:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/ubuntu/.2023WaterCode.readonly/fishROS_ws/install/examples_rclcpp_multithreaded_executor /usr/bin/ctest -C Release -D ExperimentalTest --no-compress-output -V --force-new-ctest-process
+[3.388s] UpdateCTestConfiguration  from :/home/ubuntu/.2023WaterCode.readonly/fishROS_ws/build/examples_rclcpp_multithreaded_executor/CTestConfiguration.ini
+[3.388s] Parse Config file:/home/ubuntu/.2023WaterCode.readonly/fishROS_ws/build/examples_rclcpp_multithreaded_executor/CTestConfiguration.ini
+[3.388s]    Site: dino-laptop
+[3.388s]    Build name: (empty)
+[3.388s]  Add coverage exclude regular expressions.
+[3.388s] Create new tag: 20230901-1407 - Experimental
+[3.388s] UpdateCTestConfiguration  from :/home/ubuntu/.2023WaterCode.readonly/fishROS_ws/build/examples_rclcpp_multithreaded_executor/CTestConfiguration.ini
+[3.389s] Parse Config file:/home/ubuntu/.2023WaterCode.readonly/fishROS_ws/build/examples_rclcpp_multithreaded_executor/CTestConfiguration.ini
+[3.389s] Test project /home/ubuntu/.2023WaterCode.readonly/fishROS_ws/build/examples_rclcpp_multithreaded_executor
+[3.389s] Constructing a list of tests
+[3.389s] Done constructing a list of tests
+[3.389s] Updating test list for fixtures
+[3.389s] Added 0 tests to meet fixture requirements
+[3.389s] Checking test dependency graph...
+[3.389s] Checking test dependency graph end
+[3.390s] test 1
+[3.390s]     Start 1: copyright
+[3.390s] 
+[3.390s] 1: Test command: /usr/bin/python3.10 "-u" "/opt/ros/humble/share/ament_cmake_test/cmake/run_test.py" "/home/ubuntu/.2023WaterCode.readonly/fishROS_ws/build/examples_rclcpp_multithreaded_executor/test_results/examples_rclcpp_multithreaded_executor/copyright.xunit.xml" "--package-name" "examples_rclcpp_multithreaded_executor" "--output-file" "/home/ubuntu/.2023WaterCode.readonly/fishROS_ws/build/examples_rclcpp_multithreaded_executor/ament_copyright/copyright.txt" "--command" "/opt/ros/humble/bin/ament_copyright" "--xunit-file" "/home/ubuntu/.2023WaterCode.readonly/fishROS_ws/build/examples_rclcpp_multithreaded_executor/test_results/examples_rclcpp_multithreaded_executor/copyright.xunit.xml"
+[3.390s] 1: Test timeout computed to be: 200
+[3.390s] 1: -- run_test.py: invoking following command in '/home/ubuntu/.2023WaterCode.readonly/fishROS_ws/src/examples/rclcpp/executors/multithreaded_executor':
+[3.390s] 1:  - /opt/ros/humble/bin/ament_copyright --xunit-file /home/ubuntu/.2023WaterCode.readonly/fishROS_ws/build/examples_rclcpp_multithreaded_executor/test_results/examples_rclcpp_multithreaded_executor/copyright.xunit.xml
+[3.390s] 1: No problems found, checked 1 files
+[3.390s] 1: -- run_test.py: return code 0
+[3.391s] 1: -- run_test.py: verify result file '/home/ubuntu/.2023WaterCode.readonly/fishROS_ws/build/examples_rclcpp_multithreaded_executor/test_results/examples_rclcpp_multithreaded_executor/copyright.xunit.xml'
+[3.391s] 1/6 Test #1: copyright ........................   Passed    0.42 sec
+[3.391s] test 2
+[3.391s]     Start 2: cppcheck
+[3.391s] 
+[3.391s] 2: Test command: /usr/bin/python3.10 "-u" "/opt/ros/humble/share/ament_cmake_test/cmake/run_test.py" "/home/ubuntu/.2023WaterCode.readonly/fishROS_ws/build/examples_rclcpp_multithreaded_executor/test_results/examples_rclcpp_multithreaded_executor/cppcheck.xunit.xml" "--package-name" "examples_rclcpp_multithreaded_executor" "--output-file" "/home/ubuntu/.2023WaterCode.readonly/fishROS_ws/build/examples_rclcpp_multithreaded_executor/ament_cppcheck/cppcheck.txt" "--command" "/opt/ros/humble/bin/ament_cppcheck" "--xunit-file" "/home/ubuntu/.2023WaterCode.readonly/fishROS_ws/build/examples_rclcpp_multithreaded_executor/test_results/examples_rclcpp_multithreaded_executor/cppcheck.xunit.xml"
+[3.391s] 2: Test timeout computed to be: 300
+[3.391s] 2: -- run_test.py: invoking following command in '/home/ubuntu/.2023WaterCode.readonly/fishROS_ws/src/examples/rclcpp/executors/multithreaded_executor':
+[3.392s] 2:  - /opt/ros/humble/bin/ament_cppcheck --xunit-file /home/ubuntu/.2023WaterCode.readonly/fishROS_ws/build/examples_rclcpp_multithreaded_executor/test_results/examples_rclcpp_multithreaded_executor/cppcheck.xunit.xml
+[3.392s] 2: cppcheck 2.7 has known performance issues and therefore will not be used, set the AMENT_CPPCHECK_ALLOW_SLOW_VERSIONS environment variable to override this.
+[3.392s] 2: -- run_test.py: return code 0
+[3.392s] 2: -- run_test.py: verify result file '/home/ubuntu/.2023WaterCode.readonly/fishROS_ws/build/examples_rclcpp_multithreaded_executor/test_results/examples_rclcpp_multithreaded_executor/cppcheck.xunit.xml'
+[3.392s] 2/6 Test #2: cppcheck .........................   Passed    0.33 sec
+[3.392s] test 3
+[3.392s]     Start 3: cpplint
+[3.392s] 
+[3.393s] 3: Test command: /usr/bin/python3.10 "-u" "/opt/ros/humble/share/ament_cmake_test/cmake/run_test.py" "/home/ubuntu/.2023WaterCode.readonly/fishROS_ws/build/examples_rclcpp_multithreaded_executor/test_results/examples_rclcpp_multithreaded_executor/cpplint.xunit.xml" "--package-name" "examples_rclcpp_multithreaded_executor" "--output-file" "/home/ubuntu/.2023WaterCode.readonly/fishROS_ws/build/examples_rclcpp_multithreaded_executor/ament_cpplint/cpplint.txt" "--command" "/opt/ros/humble/bin/ament_cpplint" "--xunit-file" "/home/ubuntu/.2023WaterCode.readonly/fishROS_ws/build/examples_rclcpp_multithreaded_executor/test_results/examples_rclcpp_multithreaded_executor/cpplint.xunit.xml"
+[3.393s] 3: Test timeout computed to be: 120
+[3.393s] 3: -- run_test.py: invoking following command in '/home/ubuntu/.2023WaterCode.readonly/fishROS_ws/src/examples/rclcpp/executors/multithreaded_executor':
+[3.393s] 3:  - /opt/ros/humble/bin/ament_cpplint --xunit-file /home/ubuntu/.2023WaterCode.readonly/fishROS_ws/build/examples_rclcpp_multithreaded_executor/test_results/examples_rclcpp_multithreaded_executor/cpplint.xunit.xml
+[3.520s] 3: Using '--root=..' argument
+[3.520s] 3: 
+[3.520s] 3: Done processing /home/ubuntu/.2023WaterCode.readonly/fishROS_ws/src/examples/rclcpp/executors/multithreaded_executor/multithreaded_executor.cpp
+[3.521s] 3: 
+[3.521s] 3: No problems found
+[3.545s] 3: -- run_test.py: return code 0
+[3.545s] 3: -- run_test.py: verify result file '/home/ubuntu/.2023WaterCode.readonly/fishROS_ws/build/examples_rclcpp_multithreaded_executor/test_results/examples_rclcpp_multithreaded_executor/cpplint.xunit.xml'
+[3.563s] 3/6 Test #3: cpplint ..........................   Passed    0.49 sec
+[3.563s] test 4
+[3.563s]     Start 4: lint_cmake
+[3.563s] 
+[3.563s] 4: Test command: /usr/bin/python3.10 "-u" "/opt/ros/humble/share/ament_cmake_test/cmake/run_test.py" "/home/ubuntu/.2023WaterCode.readonly/fishROS_ws/build/examples_rclcpp_multithreaded_executor/test_results/examples_rclcpp_multithreaded_executor/lint_cmake.xunit.xml" "--package-name" "examples_rclcpp_multithreaded_executor" "--output-file" "/home/ubuntu/.2023WaterCode.readonly/fishROS_ws/build/examples_rclcpp_multithreaded_executor/ament_lint_cmake/lint_cmake.txt" "--command" "/opt/ros/humble/bin/ament_lint_cmake" "--xunit-file" "/home/ubuntu/.2023WaterCode.readonly/fishROS_ws/build/examples_rclcpp_multithreaded_executor/test_results/examples_rclcpp_multithreaded_executor/lint_cmake.xunit.xml"
+[3.563s] 4: Test timeout computed to be: 60
+[3.657s] 4: -- run_test.py: invoking following command in '/home/ubuntu/.2023WaterCode.readonly/fishROS_ws/src/examples/rclcpp/executors/multithreaded_executor':
+[3.658s] 4:  - /opt/ros/humble/bin/ament_lint_cmake --xunit-file /home/ubuntu/.2023WaterCode.readonly/fishROS_ws/build/examples_rclcpp_multithreaded_executor/test_results/examples_rclcpp_multithreaded_executor/lint_cmake.xunit.xml
+[3.751s] 4: 
+[3.752s] 4: No problems found
+[3.768s] 4: -- run_test.py: return code 0
+[3.768s] 4: -- run_test.py: verify result file '/home/ubuntu/.2023WaterCode.readonly/fishROS_ws/build/examples_rclcpp_multithreaded_executor/test_results/examples_rclcpp_multithreaded_executor/lint_cmake.xunit.xml'
+[3.787s] 4/6 Test #4: lint_cmake .......................   Passed    0.22 sec
+[3.788s] test 5
+[3.788s]     Start 5: uncrustify
+[3.788s] 
+[3.788s] 5: Test command: /usr/bin/python3.10 "-u" "/opt/ros/humble/share/ament_cmake_test/cmake/run_test.py" "/home/ubuntu/.2023WaterCode.readonly/fishROS_ws/build/examples_rclcpp_multithreaded_executor/test_results/examples_rclcpp_multithreaded_executor/uncrustify.xunit.xml" "--package-name" "examples_rclcpp_multithreaded_executor" "--output-file" "/home/ubuntu/.2023WaterCode.readonly/fishROS_ws/build/examples_rclcpp_multithreaded_executor/ament_uncrustify/uncrustify.txt" "--command" "/opt/ros/humble/bin/ament_uncrustify" "--xunit-file" "/home/ubuntu/.2023WaterCode.readonly/fishROS_ws/build/examples_rclcpp_multithreaded_executor/test_results/examples_rclcpp_multithreaded_executor/uncrustify.xunit.xml"
+[3.788s] 5: Test timeout computed to be: 60
+[3.919s] 5: -- run_test.py: invoking following command in '/home/ubuntu/.2023WaterCode.readonly/fishROS_ws/src/examples/rclcpp/executors/multithreaded_executor':
+[3.919s] 5:  - /opt/ros/humble/bin/ament_uncrustify --xunit-file /home/ubuntu/.2023WaterCode.readonly/fishROS_ws/build/examples_rclcpp_multithreaded_executor/test_results/examples_rclcpp_multithreaded_executor/uncrustify.xunit.xml
+[4.027s] 5: No code style divergence in file 'multithreaded_executor.cpp'
+[4.027s] 5: 
+[4.027s] 5: No problems found
+[4.048s] 5: -- run_test.py: return code 0
+[4.048s] 5: -- run_test.py: verify result file '/home/ubuntu/.2023WaterCode.readonly/fishROS_ws/build/examples_rclcpp_multithreaded_executor/test_results/examples_rclcpp_multithreaded_executor/uncrustify.xunit.xml'
+[4.066s] 5/6 Test #5: uncrustify .......................   Passed    0.28 sec
+[4.066s] test 6
+[4.066s]     Start 6: xmllint
+[4.066s] 
+[4.066s] 6: Test command: /usr/bin/python3.10 "-u" "/opt/ros/humble/share/ament_cmake_test/cmake/run_test.py" "/home/ubuntu/.2023WaterCode.readonly/fishROS_ws/build/examples_rclcpp_multithreaded_executor/test_results/examples_rclcpp_multithreaded_executor/xmllint.xunit.xml" "--package-name" "examples_rclcpp_multithreaded_executor" "--output-file" "/home/ubuntu/.2023WaterCode.readonly/fishROS_ws/build/examples_rclcpp_multithreaded_executor/ament_xmllint/xmllint.txt" "--command" "/opt/ros/humble/bin/ament_xmllint" "--xunit-file" "/home/ubuntu/.2023WaterCode.readonly/fishROS_ws/build/examples_rclcpp_multithreaded_executor/test_results/examples_rclcpp_multithreaded_executor/xmllint.xunit.xml"
+[4.067s] 6: Test timeout computed to be: 60
+[4.146s] 6: -- run_test.py: invoking following command in '/home/ubuntu/.2023WaterCode.readonly/fishROS_ws/src/examples/rclcpp/executors/multithreaded_executor':
+[4.147s] 6:  - /opt/ros/humble/bin/ament_xmllint --xunit-file /home/ubuntu/.2023WaterCode.readonly/fishROS_ws/build/examples_rclcpp_multithreaded_executor/test_results/examples_rclcpp_multithreaded_executor/xmllint.xunit.xml
+[4.526s] 6: File 'package.xml' is valid
+[4.526s] 6: 
+[4.526s] 6: No problems found
+[4.544s] 6: -- run_test.py: return code 0
+[4.544s] 6: -- run_test.py: verify result file '/home/ubuntu/.2023WaterCode.readonly/fishROS_ws/build/examples_rclcpp_multithreaded_executor/test_results/examples_rclcpp_multithreaded_executor/xmllint.xunit.xml'
+[4.557s] 6/6 Test #6: xmllint ..........................   Passed    0.49 sec
+[4.557s] 
+[4.557s] [0;32m100% tests passed[0;0m, 0 tests failed[0;0m out of 6
+[4.558s] 
+[4.558s] Label Time Summary:
+[4.558s] copyright     =   0.42 sec*proc (1 test)
+[4.558s] cppcheck      =   0.33 sec*proc (1 test)
+[4.558s] cpplint       =   0.49 sec*proc (1 test)
+[4.558s] lint_cmake    =   0.22 sec*proc (1 test)
+[4.558s] linter        =   2.23 sec*proc (6 tests)
+[4.559s] uncrustify    =   0.28 sec*proc (1 test)
+[4.559s] xmllint       =   0.49 sec*proc (1 test)
+[4.559s] 
+[4.559s] Total Test time (real) =   2.23 sec
+[4.567s] Invoked command in '/home/ubuntu/.2023WaterCode.readonly/fishROS_ws/build/examples_rclcpp_multithreaded_executor' returned '0': AMENT_PREFIX_PATH=/home/ubuntu/.2023WaterCode.readonly/fishROS_ws/install/examples_rclcpp_multithreaded_executor:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/ubuntu/.2023WaterCode.readonly/fishROS_ws/install/examples_rclcpp_multithreaded_executor /usr/bin/ctest -C Release -D ExperimentalTest --no-compress-output -V --force-new-ctest-process

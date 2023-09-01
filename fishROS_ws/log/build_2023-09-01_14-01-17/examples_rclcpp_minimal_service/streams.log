@@ -1,0 +1,24 @@
+[0.134s] Invoking command in '/home/ubuntu/.2023WaterCode.readonly/fishROS_ws/build/examples_rclcpp_minimal_service': /usr/bin/cmake --build /home/ubuntu/.2023WaterCode.readonly/fishROS_ws/build/examples_rclcpp_minimal_service -- -j20 -l20
+[13.626s] [35m[1mConsolidate compiler generated dependencies of target service_main[0m
+[13.627s] [100%] Built target service_main
+[13.744s] Invoked command in '/home/ubuntu/.2023WaterCode.readonly/fishROS_ws/build/examples_rclcpp_minimal_service' returned '0': /usr/bin/cmake --build /home/ubuntu/.2023WaterCode.readonly/fishROS_ws/build/examples_rclcpp_minimal_service -- -j20 -l20
+[14.552s] Invoking command in '/home/ubuntu/.2023WaterCode.readonly/fishROS_ws/build/examples_rclcpp_minimal_service': /usr/bin/cmake --install /home/ubuntu/.2023WaterCode.readonly/fishROS_ws/build/examples_rclcpp_minimal_service
+[14.633s] -- Install configuration: ""
+[14.650s] -- Execute custom install script
+[14.678s] -- Up-to-date symlink: /home/ubuntu/.2023WaterCode.readonly/fishROS_ws/install/examples_rclcpp_minimal_service/lib/examples_rclcpp_minimal_service/service_main
+[14.694s] -- Up-to-date symlink: /home/ubuntu/.2023WaterCode.readonly/fishROS_ws/install/examples_rclcpp_minimal_service/share/ament_index/resource_index/package_run_dependencies/examples_rclcpp_minimal_service
+[14.703s] -- Up-to-date symlink: /home/ubuntu/.2023WaterCode.readonly/fishROS_ws/install/examples_rclcpp_minimal_service/share/ament_index/resource_index/parent_prefix_path/examples_rclcpp_minimal_service
+[14.705s] -- Up-to-date symlink: /home/ubuntu/.2023WaterCode.readonly/fishROS_ws/install/examples_rclcpp_minimal_service/share/examples_rclcpp_minimal_service/environment/ament_prefix_path.sh
+[14.705s] -- Up-to-date symlink: /home/ubuntu/.2023WaterCode.readonly/fishROS_ws/install/examples_rclcpp_minimal_service/share/examples_rclcpp_minimal_service/environment/ament_prefix_path.dsv
+[14.707s] -- Up-to-date symlink: /home/ubuntu/.2023WaterCode.readonly/fishROS_ws/install/examples_rclcpp_minimal_service/share/examples_rclcpp_minimal_service/environment/path.sh
+[14.707s] -- Up-to-date symlink: /home/ubuntu/.2023WaterCode.readonly/fishROS_ws/install/examples_rclcpp_minimal_service/share/examples_rclcpp_minimal_service/environment/path.dsv
+[14.709s] -- Up-to-date symlink: /home/ubuntu/.2023WaterCode.readonly/fishROS_ws/install/examples_rclcpp_minimal_service/share/examples_rclcpp_minimal_service/local_setup.bash
+[14.716s] -- Up-to-date symlink: /home/ubuntu/.2023WaterCode.readonly/fishROS_ws/install/examples_rclcpp_minimal_service/share/examples_rclcpp_minimal_service/local_setup.sh
+[14.716s] -- Up-to-date symlink: /home/ubuntu/.2023WaterCode.readonly/fishROS_ws/install/examples_rclcpp_minimal_service/share/examples_rclcpp_minimal_service/local_setup.zsh
+[14.716s] -- Up-to-date symlink: /home/ubuntu/.2023WaterCode.readonly/fishROS_ws/install/examples_rclcpp_minimal_service/share/examples_rclcpp_minimal_service/local_setup.dsv
+[14.716s] -- Up-to-date symlink: /home/ubuntu/.2023WaterCode.readonly/fishROS_ws/install/examples_rclcpp_minimal_service/share/examples_rclcpp_minimal_service/package.dsv
+[14.717s] -- Up-to-date symlink: /home/ubuntu/.2023WaterCode.readonly/fishROS_ws/install/examples_rclcpp_minimal_service/share/ament_index/resource_index/packages/examples_rclcpp_minimal_service
+[14.717s] -- Up-to-date symlink: /home/ubuntu/.2023WaterCode.readonly/fishROS_ws/install/examples_rclcpp_minimal_service/share/examples_rclcpp_minimal_service/cmake/examples_rclcpp_minimal_serviceConfig.cmake
+[14.717s] -- Up-to-date symlink: /home/ubuntu/.2023WaterCode.readonly/fishROS_ws/install/examples_rclcpp_minimal_service/share/examples_rclcpp_minimal_service/cmake/examples_rclcpp_minimal_serviceConfig-version.cmake
+[14.717s] -- Up-to-date symlink: /home/ubuntu/.2023WaterCode.readonly/fishROS_ws/install/examples_rclcpp_minimal_service/share/examples_rclcpp_minimal_service/package.xml
+[14.932s] Invoked command in '/home/ubuntu/.2023WaterCode.readonly/fishROS_ws/build/examples_rclcpp_minimal_service' returned '0': /usr/bin/cmake --install /home/ubuntu/.2023WaterCode.readonly/fishROS_ws/build/examples_rclcpp_minimal_service

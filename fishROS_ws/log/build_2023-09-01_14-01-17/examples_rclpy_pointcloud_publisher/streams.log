@@ -1,0 +1,37 @@
+[57.389s] Invoking command in '/home/ubuntu/.2023WaterCode.readonly/fishROS_ws/src/examples/rclpy/topics/pointcloud_publisher': PYTHONPATH=/home/ubuntu/.2023WaterCode.readonly/fishROS_ws/build/examples_rclpy_pointcloud_publisher/prefix_override:/home/ubuntu/.2023WaterCode.readonly/fishROS_ws/install/examples_rclpy_pointcloud_publisher/lib/python3.10/site-packages: /usr/bin/python3 setup.py egg_info --egg-base ../../../../../build/examples_rclpy_pointcloud_publisher build --build-base /home/ubuntu/.2023WaterCode.readonly/fishROS_ws/build/examples_rclpy_pointcloud_publisher/build install --record /home/ubuntu/.2023WaterCode.readonly/fishROS_ws/build/examples_rclpy_pointcloud_publisher/install.log --single-version-externally-managed
+[66.077s] running egg_info
+[66.101s] creating ../../../../../build/examples_rclpy_pointcloud_publisher/examples_rclpy_pointcloud_publisher.egg-info
+[66.102s] writing ../../../../../build/examples_rclpy_pointcloud_publisher/examples_rclpy_pointcloud_publisher.egg-info/PKG-INFO
+[66.105s] writing dependency_links to ../../../../../build/examples_rclpy_pointcloud_publisher/examples_rclpy_pointcloud_publisher.egg-info/dependency_links.txt
+[66.106s] writing entry points to ../../../../../build/examples_rclpy_pointcloud_publisher/examples_rclpy_pointcloud_publisher.egg-info/entry_points.txt
+[66.106s] writing requirements to ../../../../../build/examples_rclpy_pointcloud_publisher/examples_rclpy_pointcloud_publisher.egg-info/requires.txt
+[66.106s] writing top-level names to ../../../../../build/examples_rclpy_pointcloud_publisher/examples_rclpy_pointcloud_publisher.egg-info/top_level.txt
+[66.106s] writing manifest file '../../../../../build/examples_rclpy_pointcloud_publisher/examples_rclpy_pointcloud_publisher.egg-info/SOURCES.txt'
+[66.107s] reading manifest file '../../../../../build/examples_rclpy_pointcloud_publisher/examples_rclpy_pointcloud_publisher.egg-info/SOURCES.txt'
+[66.135s] writing manifest file '../../../../../build/examples_rclpy_pointcloud_publisher/examples_rclpy_pointcloud_publisher.egg-info/SOURCES.txt'
+[66.135s] running build
+[66.135s] running build_py
+[66.147s] creating /home/ubuntu/.2023WaterCode.readonly/fishROS_ws/build/examples_rclpy_pointcloud_publisher/build
+[66.148s] creating /home/ubuntu/.2023WaterCode.readonly/fishROS_ws/build/examples_rclpy_pointcloud_publisher/build/lib
+[66.148s] creating /home/ubuntu/.2023WaterCode.readonly/fishROS_ws/build/examples_rclpy_pointcloud_publisher/build/lib/examples_rclpy_pointcloud_publisher
+[66.294s] copying examples_rclpy_pointcloud_publisher/pointcloud_publisher.py -> /home/ubuntu/.2023WaterCode.readonly/fishROS_ws/build/examples_rclpy_pointcloud_publisher/build/lib/examples_rclpy_pointcloud_publisher
+[66.298s] copying examples_rclpy_pointcloud_publisher/__init__.py -> /home/ubuntu/.2023WaterCode.readonly/fishROS_ws/build/examples_rclpy_pointcloud_publisher/build/lib/examples_rclpy_pointcloud_publisher
+[66.298s] running install
+[66.298s] running install_lib
+[66.299s] creating /home/ubuntu/.2023WaterCode.readonly/fishROS_ws/install/examples_rclpy_pointcloud_publisher/lib/python3.10/site-packages/examples_rclpy_pointcloud_publisher
+[66.299s] copying /home/ubuntu/.2023WaterCode.readonly/fishROS_ws/build/examples_rclpy_pointcloud_publisher/build/lib/examples_rclpy_pointcloud_publisher/pointcloud_publisher.py -> /home/ubuntu/.2023WaterCode.readonly/fishROS_ws/install/examples_rclpy_pointcloud_publisher/lib/python3.10/site-packages/examples_rclpy_pointcloud_publisher
+[66.299s] copying /home/ubuntu/.2023WaterCode.readonly/fishROS_ws/build/examples_rclpy_pointcloud_publisher/build/lib/examples_rclpy_pointcloud_publisher/__init__.py -> /home/ubuntu/.2023WaterCode.readonly/fishROS_ws/install/examples_rclpy_pointcloud_publisher/lib/python3.10/site-packages/examples_rclpy_pointcloud_publisher
+[66.299s] byte-compiling /home/ubuntu/.2023WaterCode.readonly/fishROS_ws/install/examples_rclpy_pointcloud_publisher/lib/python3.10/site-packages/examples_rclpy_pointcloud_publisher/pointcloud_publisher.py to pointcloud_publisher.cpython-310.pyc
+[66.300s] byte-compiling /home/ubuntu/.2023WaterCode.readonly/fishROS_ws/install/examples_rclpy_pointcloud_publisher/lib/python3.10/site-packages/examples_rclpy_pointcloud_publisher/__init__.py to __init__.cpython-310.pyc
+[66.300s] running install_data
+[66.301s] creating /home/ubuntu/.2023WaterCode.readonly/fishROS_ws/install/examples_rclpy_pointcloud_publisher/share/ament_index
+[66.301s] creating /home/ubuntu/.2023WaterCode.readonly/fishROS_ws/install/examples_rclpy_pointcloud_publisher/share/ament_index/resource_index
+[66.302s] creating /home/ubuntu/.2023WaterCode.readonly/fishROS_ws/install/examples_rclpy_pointcloud_publisher/share/ament_index/resource_index/packages
+[66.302s] copying resource/examples_rclpy_pointcloud_publisher -> /home/ubuntu/.2023WaterCode.readonly/fishROS_ws/install/examples_rclpy_pointcloud_publisher/share/ament_index/resource_index/packages
+[66.302s] copying package.xml -> /home/ubuntu/.2023WaterCode.readonly/fishROS_ws/install/examples_rclpy_pointcloud_publisher/share/examples_rclpy_pointcloud_publisher
+[66.303s] running install_egg_info
+[66.303s] Copying ../../../../../build/examples_rclpy_pointcloud_publisher/examples_rclpy_pointcloud_publisher.egg-info to /home/ubuntu/.2023WaterCode.readonly/fishROS_ws/install/examples_rclpy_pointcloud_publisher/lib/python3.10/site-packages/examples_rclpy_pointcloud_publisher-0.15.1-py3.10.egg-info
+[66.303s] running install_scripts
+[66.480s] Installing pointcloud_publisher script to /home/ubuntu/.2023WaterCode.readonly/fishROS_ws/install/examples_rclpy_pointcloud_publisher/lib/examples_rclpy_pointcloud_publisher
+[66.480s] writing list of installed files to '/home/ubuntu/.2023WaterCode.readonly/fishROS_ws/build/examples_rclpy_pointcloud_publisher/install.log'
+[66.735s] Invoked command in '/home/ubuntu/.2023WaterCode.readonly/fishROS_ws/src/examples/rclpy/topics/pointcloud_publisher' returned '0': PYTHONPATH=/home/ubuntu/.2023WaterCode.readonly/fishROS_ws/build/examples_rclpy_pointcloud_publisher/prefix_override:/home/ubuntu/.2023WaterCode.readonly/fishROS_ws/install/examples_rclpy_pointcloud_publisher/lib/python3.10/site-packages: /usr/bin/python3 setup.py egg_info --egg-base ../../../../../build/examples_rclpy_pointcloud_publisher build --build-base /home/ubuntu/.2023WaterCode.readonly/fishROS_ws/build/examples_rclpy_pointcloud_publisher/build install --record /home/ubuntu/.2023WaterCode.readonly/fishROS_ws/build/examples_rclpy_pointcloud_publisher/install.log --single-version-externally-managed
