@@ -5,7 +5,6 @@ RUN chmod a+x /entrypoint.sh
 ENTRYPOINT ["/entrypoint.sh"]
 
 
-
 ARG WORKSPACE=humble_dev_ws
 # Grab the cross build basics and uninstall the web browser to save ~ 250MB of space: 
 RUN apt update &&\

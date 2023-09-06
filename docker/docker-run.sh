@@ -7,6 +7,7 @@ set -e
 set -o pipefail
 
 docker run "$@" -it --gpus all --net=host -v  /tmp/.X11-unix:/tmp/.X11-unix \
+ -e "TERM=xterm-256color" \
  -v $HOME/2023WaterCode:/home/ubuntu/.2023WaterCode.readonly \
  --ipc=host \
  -v /dev:/dev --privileged \
