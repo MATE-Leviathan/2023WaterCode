@@ -7,6 +7,9 @@ def generate_launch_description():
             package='fish_cam',
             namespace='front_cam',
             executable='DWE_exploreHD_pub',
-            name='DWE_exploreHD_pub'
+            name='DWE_exploreHD_pub',
+            parameters=[
+                {"video_device_id": 4}
+            ]
         ),
     ])

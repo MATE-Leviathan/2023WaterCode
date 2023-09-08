@@ -76,6 +76,9 @@ RUN apt-get update && apt-get install -y \
 # VERY IMPORTANT, COLCON EATS YOUR MEMORY WITHOUT IT
 RUN pip3 install setuptools==58.2.0
 
+# sonar
+RUN pip3 install bluerobotics-ping
+
 # install vscode
 RUN apt update &&\
     apt install -y wget gpg &&\
