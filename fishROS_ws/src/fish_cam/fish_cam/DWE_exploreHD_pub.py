@@ -9,7 +9,10 @@ from cv_bridge import CvBridge
 
 VIDEO_DEVICE = 4 # /dev/videoX
 
+
 class ExploreHDPub(Node):
+
+    
     def __init__(self):
         super().__init__('minimal_publisher')
         self.publisher = self.create_publisher(Image, 'Image', 10)
@@ -23,7 +26,10 @@ class ExploreHDPub(Node):
             print("Cannot open camera")
             exit()
 
+
     def publish_image(self):
+
+        # essetnially while True but is ros shutdown safe
         while rclpy.ok():
             # Capture frame-by-frame
             ret, frame = self.cap.read()
@@ -32,6 +38,7 @@ class ExploreHDPub(Node):
                 self.get_logger().error("Unable to read frame from camera")
                 break
             
+            # publishes the image converted to a ros message to the topic 'Image'
             self.publisher.publish(self.bridge.cv2_to_imgmsg(frame, "bgr8"))
 
 
@@ -42,6 +49,7 @@ def main(args=None):
     rclpy.spin(minimal_publisher)
     minimal_publisher.destroy_node()
     rclpy.shutdown()
+
 
 if __name__ == '__main__':
    main()
