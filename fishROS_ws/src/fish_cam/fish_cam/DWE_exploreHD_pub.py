@@ -1,3 +1,9 @@
+"""
+Author(s): Christopher Holley
+Creation Date: 09/09/2023
+Description: Handles interfacing with the camera and publishing the images converted to ros messages
+"""
+
 import rclpy
 from rclpy.node import Node
 from std_msgs.msg import String
@@ -11,8 +17,20 @@ VIDEO_DEVICE = 4 # /dev/videoX
 
 
 class ExploreHDPub(Node):
+    """
+    The ExploreHDPub object represents the publisher node for the camera. It handles interfacing with the camera and publishing the images converted to ros messages
 
-    
+    Args:
+        None
+
+    Attributes:
+        publisher: ROS publisher object, publishes images to the topic 'Image'
+        cap: OpenCV VideoCapture object, used to read in images from the camera
+        bridge: CvBridge object, used to convert OpenCV images to ros messages
+
+    Special Cases:
+        None
+    """
     def __init__(self):
         super().__init__('minimal_publisher')
         self.publisher = self.create_publisher(Image, 'Image', 10)
@@ -27,8 +45,20 @@ class ExploreHDPub(Node):
             exit()
 
 
-    def publish_image(self):
+    """
+    Reads in the most recent image from the camera and publishes it to the topic 'Image' 
+    NOTE: Will run forever until ros is shutdown
 
+    Args:
+        self - Must be a valid ExploreHDPub object
+
+    Returns:
+        None always  
+
+    Raises:
+        Does not raise but will log error if unable to read frame from camera
+    """
+    def publish_image(self):
         # essetnially while True but is ros shutdown safe
         while rclpy.ok():
             # Capture frame-by-frame

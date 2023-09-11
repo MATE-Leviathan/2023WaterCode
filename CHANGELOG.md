@@ -5,7 +5,12 @@ The intention of this document is to track all major changes to the codebase to 
 
 Format should be what you changed, why, and a link to the PR (required for pushing code to main). People should be able to read the changelog and get more detail than they would from just commit messages.
 
+## [0.0.2] - 2023-09-11
 
+### Changed
+
+- Add extensive documentation for sonar `ping2_sonar` and `fish_cam`, no actual code changes
+- ([**@torchtopher**](https://github.com/torchtopher))
 
 ## [0.0.1] - 2023-09-11
 
