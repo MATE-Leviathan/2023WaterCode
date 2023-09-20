@@ -74,7 +74,7 @@ class Ping2SonarPub(Node):
 
         sonar_msg = Ping2()
         sonar_msg.distance = data["distance"] / 1000 # convert mm to m
-        sonar_msg.confidence = data["confidence"]
+        sonar_msg.confidence = float(data["confidence"])
         self.publisher.publish(sonar_msg)        
 
 

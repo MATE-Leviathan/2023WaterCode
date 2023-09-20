@@ -124,7 +124,7 @@ RUN echo "source /home/ubuntu/2023WaterCode/scripts/command_aliases.sh" >> /home
 # RUN echo "bashcompinit" >> /root/.zshrc
 # RUN echo 'eval "$(register-python-argcomplete3 ros2)"' >> /root/.zshrc
 # RUN echo 'eval "$(register-python-argcomplete3 colcon)"' >> /root/.zshrc
-
+USER ubuntu
 RUN export DONT_PROMPT_WSL_INSTALL=1 &&\
     code --install-extension ms-vscode.cpptools &&\
     code --install-extension ms-vscode.cpptools-extension-pack &&\
