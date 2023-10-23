@@ -51,7 +51,8 @@ class Ping2SonarPub(Node):
                 exit()
         
         self.get_logger().info("Ping2 Sonar Initalized Sucessfully")
-        
+        self.get_logger().info("Ping2 Sonar Initalized Sucessfully")
+
         timer_period = 0.02 # seconds, should be 50hz
         self.timer = self.create_timer(timer_period, self.read_and_publish_data)            
 

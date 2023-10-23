@@ -5,6 +5,7 @@ RUN chmod a+x /entrypoint.sh
 ENTRYPOINT ["/entrypoint.sh"]
 
 
+
 ARG WORKSPACE=humble_dev_ws
 # Grab the cross build basics and uninstall the web browser to save ~ 250MB of space: 
 RUN apt update &&\
@@ -71,13 +72,11 @@ RUN apt-get update && apt-get install -y \
     wget \
     vim \
     xorg-dev \
+    python-wstool \ 
     ~nros-humble-rqt*
 
 # VERY IMPORTANT, COLCON EATS YOUR MEMORY WITHOUT IT
 RUN pip3 install setuptools==58.2.0
-
-# sonar
-RUN pip3 install bluerobotics-ping
 
 # install vscode
 RUN apt update &&\
@@ -124,7 +123,7 @@ RUN echo "source /home/ubuntu/2023WaterCode/scripts/command_aliases.sh" >> /home
 # RUN echo "bashcompinit" >> /root/.zshrc
 # RUN echo 'eval "$(register-python-argcomplete3 ros2)"' >> /root/.zshrc
 # RUN echo 'eval "$(register-python-argcomplete3 colcon)"' >> /root/.zshrc
-USER ubuntu
+
 RUN export DONT_PROMPT_WSL_INSTALL=1 &&\
     code --install-extension ms-vscode.cpptools &&\
     code --install-extension ms-vscode.cpptools-extension-pack &&\
@@ -132,3 +131,5 @@ RUN export DONT_PROMPT_WSL_INSTALL=1 &&\
     code --install-extension ms-iot.vscode-ros &&\
     code --install-extension ms-python.python &&\
     code --install-extension ms-python.vscode-pylance
+
+RUN rosdep update
