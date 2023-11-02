@@ -35,7 +35,9 @@ class ExploreHDPub(Node):
         super().__init__('minimal_publisher')
         self.publisher = self.create_publisher(Image, 'Image', 10)
         #self.get_logger().info(self.get_node_names_and_namespaces())
-        VIDEO_DEVICE = self.get_parameter('video_device_id').get_parameter_value()
+        self.declare_parameter('video_device_id', 1)
+
+        VIDEO_DEVICE = self.get_parameter('video_device_id').get_parameter_value().integer_value
         print(f"Video device paramter is {VIDEO_DEVICE}")
         self.cap = cv2.VideoCapture(VIDEO_DEVICE)
         self.bridge = CvBridge()

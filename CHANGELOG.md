@@ -5,6 +5,13 @@ The intention of this document is to track all major changes to the codebase to 
 
 Format should be what you changed, why, and a link to the PR (required for pushing code to main). People should be able to read the changelog and get more detail than they would from just commit messages.
 
+## [0.0.3] - 2023-10-5
+
+### Changed
+
+- Add `controller_node` package, which has 
+- ([**@torchtopher**](https://github.com/torchtopher))
+
 ## [0.0.2] - 2023-09-11
 
 ### Changed
