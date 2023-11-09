@@ -73,6 +73,9 @@ RUN apt-get update && apt-get install -y \
     vim \
     xorg-dev \
     python-wstool \ 
+    i2c-tools \
+    libgpiod-dev \ 
+    python3-libgpiod \
     ~nros-humble-rqt*
 
 # VERY IMPORTANT, COLCON EATS YOUR MEMORY WITHOUT IT
