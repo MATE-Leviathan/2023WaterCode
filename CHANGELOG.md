@@ -9,7 +9,7 @@ Format should be what you changed, why, and a link to the PR (required for pushi
 
 ### Changed
 
-- Add `controller_node` package, which has 
+- Add `controller_node` package, which has code for controlling motors.
 - ([**@torchtopher**](https://github.com/torchtopher))
 
 ## [0.0.2] - 2023-09-11
