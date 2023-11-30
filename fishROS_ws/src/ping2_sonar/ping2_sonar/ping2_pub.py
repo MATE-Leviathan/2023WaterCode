@@ -7,9 +7,11 @@ Description: Handles the interfacing with the Ping2 sonar and publishing the dat
 import rclpy
 from rclpy.node import Node
 from std_msgs.msg import String
+from sensor_msgs.msg import Imu
 import numpy as np
-from brping import Ping1D
-from ping2_sonar_msgs.msg import Ping2
+import adafruit_bno055
+import board
+import tf_transformations
 
 # shouldn't need to change this
 BAUD_RATE = 115200
@@ -17,7 +19,7 @@ BAUD_RATE = 115200
 DEVICE = "/dev/ttyUSB0"
 
 
-class Ping2SonarPub(Node):
+class ImuPub(Node):
     """
     The Ping2SonarPub object represents the publisher node for the ping2 sonar. 
     It handles interfacing with the ping2 sonar and publishing the data to the topic 'Data'
@@ -35,24 +37,12 @@ class Ping2SonarPub(Node):
     """
     def __init__(self):
         super().__init__('minimal_publisher')
-        self.publisher = self.create_publisher(Ping2, 'Data', 10)
-        self.ping_sonar = Ping1D()
-        
-        self.ping_sonar.connect_serial(DEVICE, BAUD_RATE)
-        MAX_RETRIES = 3
+        self.publisher = self.create_publisher(Imu, 'Data', 10)
 
-        for i in range(1, MAX_RETRIES+1):
-            if self.ping_sonar.initialize():
-                break
-            self.get_logger().error(f"Failed to initialize Ping2! Trying {MAX_RETRIES-i} more times")
-            if i == MAX_RETRIES:
-                self.get_logger().error("Unable to start ping2 sonar, EXITING")
-                rclpy.shutdown()
-                exit()
-        
-        self.get_logger().info("Ping2 Sonar Initalized Sucessfully")
-        self.get_logger().info("Ping2 Sonar Initalized Sucessfully")
+        i2c = board.I2C()
 
+        self.sensor = adafruit_bno055.BNO055_I2C(i2c, address=0x28)
+        print(self.sensor.temperature)
         timer_period = 0.02 # seconds, should be 50hz
         self.timer = self.create_timer(timer_period, self.read_and_publish_data)            
 
@@ -69,19 +59,18 @@ class Ping2SonarPub(Node):
         Does not raise but will log error if unable to read frame from ping2
     """
     def read_and_publish_data(self):
-        data = self.ping_sonar.get_distance()
+        data = self.sensor.euler
         if not data:
-            self.get_logger().error("Failed reading sonar data")
+            self.get_logger().error("Failed reading IMU data")
 
-        sonar_msg = Ping2()
-        sonar_msg.distance = data["distance"] / 1000 # convert mm to m
-        sonar_msg.confidence = float(data["confidence"])
-        self.publisher.publish(sonar_msg)        
+        imu_msg = Imu()
+        imu_msg.orientation = tf_transformations.quaternion_from_euler(data)
+        self.publisher.publish(imu_msg)        
 
 
 def main(args=None):
     rclpy.init(args=args)
-    minimal_publisher = Ping2SonarPub()
+    minimal_publisher = ImuPub()
     rclpy.spin(minimal_publisher)
     minimal_publisher.destroy_node()
     rclpy.shutdown()
