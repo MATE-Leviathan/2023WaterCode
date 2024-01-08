@@ -1,5 +1,5 @@
 """
-Author(s): Christopher Holley
+Author(s): Christopher Holley, Everett Tucker
 Creation Date: 09/07/2023
 Description: Handles the interfacing with the Ping2 sonar and publishing the data to the topic 'Data'
 """
@@ -12,6 +12,8 @@ import numpy as np
 import adafruit_bno055
 import board
 import tf_transformations
+from geometry_msgs.msg import Quaternion
+from geometry_msgs.msg import Vector3
 
 # shouldn't need to change this
 BAUD_RATE = 115200
@@ -42,12 +44,13 @@ class ImuPub(Node):
         i2c = board.I2C()
 
         self.sensor = adafruit_bno055.BNO055_I2C(i2c, address=0x28)
-        print(self.sensor.temperature)
+        print(f'Current Temperature: {self.sensor.temperature}')
         timer_period = 0.02 # seconds, should be 50hz
         self.timer = self.create_timer(timer_period, self.read_and_publish_data)            
 
     """
     Reads in the most recent data from the ping2 sonar and publishes it to the topic 'Data'
+    Publishes Quaternion Orientation, Linear Acceleration, and Angular Velocity
 
     Args:
         None
@@ -59,12 +62,40 @@ class ImuPub(Node):
         Does not raise but will log error if unable to read frame from ping2
     """
     def read_and_publish_data(self):
-        data = self.sensor.euler
-        if not data:
-            self.get_logger().error("Failed reading IMU data")
+        # Getting data from the sensor
+        euler = self.sensor.euler
+        l_accel = self.sensor.linear_acceleration
+        a_vel = self.sensor.gyro
+
+        # Checking data
+        if not euler:
+            self.get_logger().error("Failed reading IMU Euler Orientation Data")
+        if not l_accel:
+            self.get_logger().error("Failed reading IMU Linear Acceleration Data")
+        if not a_vel:
+            self.get_logger().error("Failed reading IMU Angular Velocity Data")
 
         imu_msg = Imu()
-        imu_msg.orientation = tf_transformations.quaternion_from_euler(data)
+
+        # Adding quaternion orientation (x, y, z, w)
+        arr = tf_transformations.quaternion_from_euler(euler[0], euler[1], euler[2])
+        imu_msg.orientation = Quaternion(x=arr[0], y=arr[1], z=arr[2], w=arr[3])
+
+        # Adding linear acceleration (m/s^2)
+        linear_acceleration = Vector3()
+        linear_acceleration.x = l_accel[0]
+        linear_acceleration.y = l_accel[1]
+        linear_acceleration.z = l_accel[2]
+        imu_msg.linear_acceleration = linear_acceleration
+
+        # Adding angluar velocity (rad/sec)
+        angular_velocity = Vector3()
+        angular_velocity.x = a_vel[0]
+        angular_velocity.y = a_vel[1]
+        angular_velocity.z = a_vel[2]
+        imu_msg.angular_velocity = angular_velocity
+        
+        # Publish the IMU message
         self.publisher.publish(imu_msg)        
 
 
