@@ -77,7 +77,7 @@ class ImuPub(Node):
 
         imu_msg = Imu()
 
-        # Adding quaternion orientation (x, y, z, w)
+        # Adding quaternion orientation [x, y, z, w]
         arr = tf_transformations.quaternion_from_euler(euler[0], euler[1], euler[2])
         imu_msg.orientation = Quaternion(x=arr[0], y=arr[1], z=arr[2], w=arr[3])
 
