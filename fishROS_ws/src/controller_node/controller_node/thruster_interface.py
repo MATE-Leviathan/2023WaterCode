@@ -55,7 +55,8 @@ class ThrusterInterface(Node):
 
     # takes 
     def map_speed_to_angle(self, speed):
-        
+        # [1100, 1900] -> [0, 180]
+        return (speed - 1100) * 9 / 40
 
 def main(args=None):
     rclpy.init(args=args)
