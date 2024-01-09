@@ -40,8 +40,8 @@ class MinimalSubscriber(Node):
         Right Stick Horizontal: 3 - [left, right] -> [1, -1]
         Right Stick Vertical: 4 - [up, down] -> [1, -1]
         Right Trigger: 5 - [pressed, not pressed] -> [-1, 1]
-        Pad Horizontal: 6 - [left, right] -> [1, -1]
-        Pad Vertical: 7 - [up, down] -> [1, -1]
+        Pad Horizontal: 6 - left -> 1, right -> -1
+        Pad Vertical: 7 - up -> 1, down -> -1
         """
         
         self.get_logger().info(f'Press the A Button: {msg.buttons[0]}')
