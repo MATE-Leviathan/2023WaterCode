@@ -1,20 +1,43 @@
 """
 Author(s): Everett Tucker
 Creation Date: 01/09/2024
-Description: Tests getting controller inputs from the joy topic
+Description: Tests getting controller inputs from the joy topic and writing to motors
 """
 
+
 import rclpy
-from rclpy.node import Node
+import time
 import busio
+from board import SCL, SDA
+from adafruit_pca9685 import PCA9685
+from adafruit_motor import servo
+from rclpy.node import Node
 from sensor_msgs.msg import Joy
 
 class MinimalSubscriber(Node):
 
     def __init__(self):
+        # Creating the subscriber
         super().__init__('minimal_subscriber')
         self.subscription = self.create_subscription(Joy, 'joy', self.listener_callback, 10)
     
+        # Creating the servo
+        i2c_bus = busio.I2C(SCL, SDA)
+        self.pca = PCA9685(i2c_bus)
+        self.pca.frequency = 450
+
+        # Sets the duty cycle for the LED pin to match the servo
+        self.pca.channels[0].duty_cycle = 0xFFFF
+        
+        # Turns the LED off
+        # self.pca.channels[0].duty_cycle = 0x0000
+
+        self.thruster = servo.Servo(self.pca.channels[8], min_pulse=1100, max_pulse=1900)
+
+        self.thruster.angle = 90
+        self.get_logger().info("Thruster Initializing...")
+        time.sleep(7)
+
     def listener_callback(self, msg):
         """
         msg.buttons contains the button inputs.
@@ -44,7 +67,19 @@ class MinimalSubscriber(Node):
         Pad Vertical: 7 - up -> 1, down -> -1
         """
         
-        self.get_logger().info(f'Press the A Button: {msg.buttons[0]}')
+        """
+        In my testing, I found that an angle of about 110 resulted in no motion
+        Whereas an angle of 90 resulted in slow forward motion.
+        """
+
+        # Angle is limited to [45, 135]
+        angle = (msg.axes[1] * 45) + 90
+        self.thruster.angle = angle
+
+        # This time roughly matches the frequency of the pwm - 450 Hz
+        time.sleep(0.002)
+
+        self.get_logger().info(f'Thruster Angle: {angle}')
 
 
 def main(args=None):
@@ -53,8 +88,8 @@ def main(args=None):
     rclpy.spin(minimal_subscriber)
 
     minimal_subscriber.destroy_node()
+    self.pca.deinit()
     rclpy.shutdown()
 
 if __name__ == '__main__':
     main()
-# Tests getting controller inputs from the joy topic. 
