@@ -39,14 +39,14 @@ class ImuPub(Node):
     """
     def __init__(self):
         super().__init__('minimal_publisher')
-        self.publisher = self.create_publisher(Imu, 'Data', 10)
+        self.publisher = self.create_publisher(Imu, 'IMUData', 10)
 
         i2c = board.I2C()
 
         self.sensor = adafruit_bno055.BNO055_I2C(i2c, address=0x28)
         print(f'Current Temperature: {self.sensor.temperature}')
         timer_period = 0.02 # seconds, should be 50hz
-        self.timer = self.create_timer(timer_period, self.read_and_publish_data)            
+        self.timer = self.create_timer(timer_period, self.read_and_publish_imu_data)            
 
     """
     Reads in the most recent data from the ping2 sonar and publishes it to the topic 'Data'
@@ -61,7 +61,7 @@ class ImuPub(Node):
     Raises:
         Does not raise but will log error if unable to read frame from ping2
     """
-    def read_and_publish_data(self):
+    def read_and_publish_imu_data(self):
         # Getting data from the sensor
         euler = self.sensor.euler
         l_accel = self.sensor.linear_acceleration

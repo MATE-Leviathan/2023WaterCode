@@ -32,9 +32,9 @@ class MinimalSubscriber(Node):
         # Turns the LED off
         # self.pca.channels[0].duty_cycle = 0x0000
 
-        self.thruster = servo.Servo(self.pca.channels[8], min_pulse=1100, max_pulse=1900)
+        self.thruster = servo.ContinuousServo(self.pca.channels[8], min_pulse=1100, max_pulse=1900)
 
-        self.thruster.angle = 90
+        self.thruster.throttle = 0
         self.get_logger().info("Thruster Initializing...")
         time.sleep(7)
 
@@ -73,13 +73,12 @@ class MinimalSubscriber(Node):
         """
 
         # Angle is limited to [45, 135]
-        angle = (msg.axes[1] * 45) + 90
-        self.thruster.angle = angle
+        self.thruster.throttle = msg.axes[1]
 
         # This time roughly matches the frequency of the pwm - 450 Hz
         time.sleep(0.002)
 
-        self.get_logger().info(f'Thruster Angle: {angle}')
+        self.get_logger().info(f'Throttle is at: {msg.axes[1]}')
 
 
 def main(args=None):
@@ -88,7 +87,6 @@ def main(args=None):
     rclpy.spin(minimal_subscriber)
 
     minimal_subscriber.destroy_node()
-    self.pca.deinit()
     rclpy.shutdown()
 
 if __name__ == '__main__':
