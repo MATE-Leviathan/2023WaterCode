@@ -54,14 +54,14 @@ class DriveRunner(Node):
         while rclpy.ok() and joy_init and imu_init:
             # Code to drive the robot goes here
             # Use global variables to get controller and sensor data
-            
+
             # Changing Controller Sensitivity
             global sensitivity
             if buttons[0] == 1:
                 sensitivity = max(0, sensitivity - DELTA_SENSITIVITY)
             elif buttons[1] == 1:
                 sensitivity = min(1, sensitivity + DELTA_SENSITIVITY)
-           
+
             # Writing joystick inputs
             # There is no manual way to adjust roll, for now
 
@@ -70,7 +70,7 @@ class DriveRunner(Node):
                 z_rotation = (axes[2] - 1) / 2
             else:
                 z_rotation = -(axes[5] - 1) / 2
-            
+
             logger.info(f'Sensitivity: {sensitivity}')
             write(axes[0], axes[1], axes[4], 0, 0, z_rotation)
 
@@ -191,11 +191,11 @@ def main(args=None):
 
     # Starting the thread
     executor.spin()
-    
+
     # Shutting down
     rclpy.shutdown()
 
 
 if __name__ == '__main__':
     main()
-
+    
