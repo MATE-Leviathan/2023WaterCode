@@ -16,10 +16,14 @@ from sensor_msgs.msg import Joy
 from geometry_msgs.msg import Twist
 
 
-# Global dynamic variables
+# Global Dynamic Variables
 controller_init = false
 axes = []
 buttons = []
+sensitivity = 1
+
+# Global Static Variables
+DELTA_SENSITIVITY = 0.0001
 
 
 class ControllerSub(Node):
@@ -76,9 +80,38 @@ class TwistPub(Node):
         super().__init__("twist_publisher")
         self.publisher = self.create_publisher(Twist, 'twist', 10)
 
+
+    def calibrate(self, value):
+        return sensitivity * value
+
+
     def publishTwist(self):
         if controller_init:
+            # Updating sensitity
+            global sensitivity
+            if buttons[0] == 1:
+                sensitivity = max(0, sensitivity - DELTA_SENSITIVITY)
+            elif buttons[1] == 1:
+                sensitivity = min(1, sensitivity + DELTA_SENSITIVITY)
+
+            # We want the linear and angular measurements to be floats in [-1, 1]
             twist_message = Twist()
+            
+            # Setting forward movement
+            twist_message.linear.x = self.calibrate(axes[1])
+            
+            # Setting lateral movement
+            twist_message.linear.y = self.calibrate(axes[0])
+
+            # Setting vertical movement, some logic to decide which trigger to use
+            if axes[2] < axes[5]:
+                linear_z = (axes[2] - 1) / 2
+            else:
+                linear_z = -(axes[5] - 1) / 2
+            twist_message.linear.z = self.calibrate(linear_z)
+
+            # Setting yaw
+
 
             # Modify twist_message using global variables axes and buttons
 
