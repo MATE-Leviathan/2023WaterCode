@@ -25,7 +25,7 @@ START_PIN = 8
 ONEOVERROOTTWO = 1 / math.sqrt(2)
 MOTOR_DEADZONE = 0.01
 MIN_PULSE = 1141  # Change these to account for pwm differences in the pca board
-MAX_PULSE = 1871
+MAX_PULSE = 1971
 
 # Dynamic Global Variables
 imu_init = False
