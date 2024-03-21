@@ -72,7 +72,6 @@ RUN apt-get update && apt-get install -y \
     wget \
     vim \
     xorg-dev \
-    python-wstool \ 
     i2c-tools \
     libgpiod-dev \ 
     python3-libgpiod \
