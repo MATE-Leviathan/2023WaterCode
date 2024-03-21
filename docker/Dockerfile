@@ -126,12 +126,12 @@ RUN echo "source /home/ubuntu/2023WaterCode/scripts/command_aliases.sh" >> /home
 # RUN echo 'eval "$(register-python-argcomplete3 ros2)"' >> /root/.zshrc
 # RUN echo 'eval "$(register-python-argcomplete3 colcon)"' >> /root/.zshrc
 
-RUN export DONT_PROMPT_WSL_INSTALL=1 &&\
-    code --install-extension ms-vscode.cpptools &&\
-    code --install-extension ms-vscode.cpptools-extension-pack &&\
-    code --install-extension ms-vscode.cpptools-themes &&\
-    code --install-extension ms-iot.vscode-ros &&\
-    code --install-extension ms-python.python &&\
-    code --install-extension ms-python.vscode-pylance
+# RUN export DONT_PROMPT_WSL_INSTALL=1 &&\
+#    code --install-extension ms-vscode.cpptools &&\
+#    code --install-extension ms-vscode.cpptools-extension-pack &&\
+#    code --install-extension ms-vscode.cpptools-themes &&\
+#    code --install-extension ms-iot.vscode-ros &&\
+#    code --install-extension ms-python.python &&\
+#    code --install-extension ms-python.vscode-pylance
 
 RUN rosdep update
