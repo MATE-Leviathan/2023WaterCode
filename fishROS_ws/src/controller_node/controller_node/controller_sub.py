@@ -92,6 +92,8 @@ class TwistPub(Node):
             twist_message.linear.z = linear_z
 
             # Angular Motion - Just yaw for now
+            twist_message.angular.x = 0
+            twist_message.angular.y = 0
             twist_message.angular.z = axes[3]
 
             self.publisher.publish(twist_message)
