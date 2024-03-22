@@ -82,6 +82,17 @@ class TwistPub(Node):
 
             # Modify twist_message using global variables axes and buttons
 
+            # Linear Motion - (x, y, z)
+            twist_message.linear.x = axes[1]
+            twist_message.linear.y = axes[0]
+            if axes[2] < axes[5]:
+                linear_z = (axes[2] - 1) / 2
+            else:
+                linear_z = -(axes[5] - 1) / 2
+            twist_message.linear.z = linear_z
+
+            # Angular Motion - Just yaw for now
+            twist_message.angular.z = axes[3]
 
             self.publisher.publish(twist_message)
         
