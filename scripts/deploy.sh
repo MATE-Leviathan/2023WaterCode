@@ -5,7 +5,7 @@ set -o pipefail
 
 # This can be an array of IP address if there are multiple Jetsons
 #JETSON_ADDR=( )
-JETSON_ADDR=(10.50.62.123)
+JETSON_ADDR=(10.50.2.100)
 
 # Environment to deploy to (prod or dev).
 INSTALL_ENV=dev
@@ -57,7 +57,7 @@ while [[ $# -gt 0 ]] ; do
         shift
     ;;
     -b|--box)
-        JETSON_ADDR=(10.9.0.8)
+        JETSON_ADDR=(10.50.2.100)
         shift
     ;;
     *) # unknown option

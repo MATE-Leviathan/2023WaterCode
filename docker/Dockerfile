@@ -65,6 +65,7 @@ RUN apt-get update && apt-get install -y \
     ros-humble-turtlebot3-msgs \
     ros-humble-twist-mux \
     ros-humble-usb-cam \
+    ros-humble-joy-linux \
     ros-humble-xacro \
     ruby-dev \
     rviz \

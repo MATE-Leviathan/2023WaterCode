@@ -48,57 +48,9 @@ class DriveRunner(Node):
         threading.Thread(target=self.drive).start()
         global logger
         logger = self.get_logger()
+        
+    
 
-
-    def drive(self):
-        self.get_logger().info("Drive Running.")
-        while rclpy.ok() and joy_init and imu_init:
-            # Code to drive the robot goes here
-            # Use global variables to get controller and sensor data
-
-            # Changing Controller Sensitivity
-            global sensitivity
-            if buttons[0] == 1:
-                sensitivity = max(0, sensitivity - DELTA_SENSITIVITY)
-            elif buttons[1] == 1:
-                sensitivity = min(1, sensitivity + DELTA_SENSITIVITY)
-
-            # Writing joystick inputs
-            # There is no manual way to adjust roll, for now
-
-            # This if statement sets the z_rotation from both triggers
-            if axes[2] < axes[5]:
-                z_rotation = (axes[2] - 1) / 2
-            else:
-                z_rotation = -(axes[5] - 1) / 2
-
-            logger.info(f'Sensitivity: {sensitivity}')
-            write(axes[0], axes[1], axes[4], 0, 0, z_rotation)
-
-
-class ControllerSub(Node):
-    def __init__(self):
-        super().__init__('controller_subscriber')
-        self.subscription = self.create_subscription(Joy, 'joy', self.controller_callback, 10)
-
-    def controller_callback(self, msg):
-        global axes, buttons, joy_init
-        axes = msg.axes
-        buttons = msg.buttons
-        joy_init = True
-
-
-class IMUSub(Node):
-    def __init__(self):
-        super().__init__('imu_subscriber')
-        self.subscription = self.create_subscription(Imu, 'IMUData', self.imu_callback, 10)
-
-    def imu_callback(self, msg):
-        global orientation, linear_acceleration, angular_velocity, imu_init
-        orientation = msg.orientation
-        linear_acceleration = msg.linear_acceleration
-        angular_velocity = msg.angular_velocity
-        imu_init = True
 
 
 def drivetrain_init():
@@ -110,8 +62,8 @@ def drivetrain_init():
     # Thruster Variables
     NUM_MOTORS = 6
     START_PIN = 8
-    MIN_PULSE = 1100
-    MAX_PULSE = 1900
+    MIN_PULSE = 1141
+    MAX_PULSE = 1971
 
     # Creating the Thrusters
     for i in range(NUM_MOTORS):
@@ -122,6 +74,13 @@ def drivetrain_init():
         thruster.angle = MIDPOINT_ANGLE
 
     time.sleep(7)
+    logger.info("Thrusters Initialized")
+    write(0, 0, 1, 0, 0, 0)
+    logger.info("Going for 4 seconds and stopping")
+    time.sleep(4)
+    # Initializing Thrusters
+    for thruster in thrusters:
+        thruster.angle = MIDPOINT_ANGLE
 
 
 """
@@ -137,6 +96,8 @@ def map_float_to_angle(val):
         return max(angle + MIDPOINT_ANGLE, 0)
     else:
         return MIDPOINT_ANGLE
+
+
 
 
 """
@@ -170,6 +131,7 @@ def write(x, y, z, x_rotation, y_rotation, z_rotation):
         set_thruster(4, -x_rotation)
 
 
+
 """
 Sets the specified thruster with the given angle with respect to the change in acceleration
 TODO: Add a compensator to prevent large changes in motor speed
@@ -183,11 +145,10 @@ def main(args=None):
     # Initializing instances
     rclpy.init(args=args)
     drivetrain_init()
+    
 
     # Creating a thread executor
     executor = MultiThreadedExecutor()
-    executor.add_node(ControllerSub())
-    executor.add_node(IMUSub())
     executor.add_node(DriveRunner())
 
     # Starting the thread

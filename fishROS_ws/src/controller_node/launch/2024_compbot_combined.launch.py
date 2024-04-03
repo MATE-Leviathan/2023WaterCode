@@ -10,11 +10,13 @@ from launch.launch_description_sources import PythonLaunchDescriptionSource
 
 def generate_launch_description():
     """Launch the example.launch.py launch file."""
+    ''' 
     camera_launch = IncludeLaunchDescription(
         PythonLaunchDescriptionSource([os.path.join(
             get_package_share_directory('fish_cam'), 'launch'),
             '/DWEhd.launch.py'])
     )
+    '''
 
     joy_launch = IncludeLaunchDescription(
         PythonLaunchDescriptionSource([os.path.join(
@@ -33,5 +35,4 @@ def generate_launch_description():
     return LaunchDescription([
         joy_launch,
         #imu_launch,
-        camera_launch
     ])
