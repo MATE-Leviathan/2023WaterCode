@@ -2,9 +2,10 @@
 Author(s): Everett Tucker
 Date Created: 1/10/2024
 Description: This is the main ros node for driving the robot.
-TODO: Add subscribers for the following sensors: (sensor_name, topic, message_type)
-    Joystick, joy, Joy
-    IMU, IMUData, IMU
+TODO: 
+* Create an auto stabalization system using the IMU data
+* Add subscribers for the depth sensor and external temp sensor
+* Test this in the water!
 """
 
 import rclpy
@@ -42,15 +43,15 @@ ANGLE_RANGE = 90  # This is the range from midpoint to max/min thrust
 
 
 class DriveRunner(Node):
-    def __init__(self):
-        super().__init__('drive_runner')
+    def __init__(self, node_name, use_global_arguments=False):
+        super().__init__(node_name)
         threading.Thread(target=self.drive).start()
         global logger
         logger = self.get_logger()
 
 
     def drive(self):
-        self.get_logger().info("Drive Running.")
+        self.get_logger().info(f'Drive running with IMU {imu_init} and Joy {joy_init}')
         while rclpy.ok() and joy_init and imu_init:
             # Code to drive the robot goes here
             # Use global variables to get controller and sensor data
@@ -71,13 +72,14 @@ class DriveRunner(Node):
             else:
                 z_rotation = -(axes[5] - 1) / 2
 
-            logger.info(f'Sensitivity: {sensitivity}')
+            logger.info(f'IMU TEST: {orientation.x}')
+            logger.info(f'JOY TEST: {axes[1]}')
             write(axes[0], axes[1], axes[4], 0, 0, z_rotation)
 
 
 class ControllerSub(Node):
-    def __init__(self):
-        super().__init__('controller_subscriber')
+    def __init__(self, node_name, use_global_arguments=False):
+        super().__init__(node_name)
         self.subscription = self.create_subscription(Joy, 'joy', self.controller_callback, 10)
 
     def controller_callback(self, msg):
@@ -88,8 +90,8 @@ class ControllerSub(Node):
 
 
 class IMUSub(Node):
-    def __init__(self):
-        super().__init__('imu_subscriber')
+    def __init__(self, node_name):
+        super().__init__(node_name, use_global_arguments=False)
         self.subscription = self.create_subscription(Imu, 'IMUData', self.imu_callback, 10)
 
     def imu_callback(self, msg):
@@ -185,9 +187,9 @@ def main(args=None):
 
     # Creating a thread executor
     executor = MultiThreadedExecutor()
-    executor.add_node(ControllerSub())
-    executor.add_node(IMUSub())
-    executor.add_node(DriveRunner())
+    executor.add_node(ControllerSub('controller_subscriber'))
+    executor.add_node(IMUSub('imu_subscriber'))
+    executor.add_node(DriveRunner('drive_runner'))
 
     # Starting the thread
     executor.spin()
@@ -198,4 +200,3 @@ def main(args=None):
 
 if __name__ == '__main__':
     main()
-    

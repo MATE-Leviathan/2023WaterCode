@@ -5,9 +5,9 @@ Description: Handles interfacing with the camera and publishing the images conve
 """
 
 import rclpy
+import imutils
 from rclpy.node import Node
 from std_msgs.msg import String
-from cv_bridge import CvBridge
 from sensor_msgs.msg import Image
 import cv2
 from cv_bridge import CvBridge
@@ -35,11 +35,19 @@ class ExploreHDPub(Node):
         super().__init__('minimal_publisher')
         self.publisher = self.create_publisher(Image, 'Image', 10)
         #self.get_logger().info(self.get_node_names_and_namespaces())
-        self.declare_parameter('video_device_id', 1)
+        self.declare_parameter('video_device_id', 4)
 
         VIDEO_DEVICE = self.get_parameter('video_device_id').get_parameter_value().integer_value
-        print(f"Video device paramter is {VIDEO_DEVICE}")
+        print(f"Video device parameter is {VIDEO_DEVICE}")
         self.cap = cv2.VideoCapture(VIDEO_DEVICE)
+        
+        # Frame is normally 1920 x 1080
+        # self.cap.set(cv2.CAP_PROP_FRAME_WIDTH, 1920.0)
+        # self.cap.set(cv2.CAP_PROP_FRAME_HEIGHT, 1080.0)
+
+        # FPS = 20 is very good, it decreses the window size at makes it a lot better
+        self.cap.set(cv2.CAP_PROP_FPS, 20)
+
         self.bridge = CvBridge()
 
         if not self.cap.isOpened():
@@ -65,6 +73,10 @@ class ExploreHDPub(Node):
         while rclpy.ok():
             # Capture frame-by-frame
             ret, frame = self.cap.read()
+
+            # Resizing
+
+            frame = imutils.resize(frame, width=1920, height=1080)
             # if frame is read correctly ret is True
             if not ret:
                 self.get_logger().error("Unable to read frame from camera")
