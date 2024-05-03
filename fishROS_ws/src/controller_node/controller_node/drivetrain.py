@@ -1,4 +1,5 @@
 """
+This script is obsolete as of 5/9/2024, please refrain from using it.
 Author(s): Everett Tucker
 Date Created: 1/10/2024
 Description: This is the main ros node for driving the robot.
