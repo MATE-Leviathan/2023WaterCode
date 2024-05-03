@@ -24,6 +24,7 @@ from sensor_msgs.msg import Imu
 THRUSTER_PINS = [1, 2, 3, 13, 14, 15]
 ONEOVERROOTTWO = 1 / math.sqrt(2)
 CONTROLLER_DEADZONE = 0.01
+THRUST_SCALE_FACTOR = 0.83375
 
 # Dynamic Global Variables
 imu_init = False
@@ -60,6 +61,7 @@ class DriveRunner(Node):
 
     def set_thruster(self, index, value):
         value = min(max(value, -1), 1)  # Keeping it in bounds
+        value = value if value < 0 else value * THRUST_SCALE_FACTOR
         self.thrusters[index].angle = 90 * value + 90
 
     """
@@ -80,10 +82,10 @@ class DriveRunner(Node):
         ### Horizontal Motor Writing
         # Note: I am negating the y-components for testing
         if abs(x) > CONTROLLER_DEADZONE or abs(y) > CONTROLLER_DEADZONE:  # Linear Movement in XY
-            self.set_thruster(5, ONEOVERROOTTWO * (x + y))
-            self.set_thruster(0, ONEOVERROOTTWO * (x - y))
-            self.set_thruster(3, ONEOVERROOTTWO * (y - x))
-            self.set_thruster(2, ONEOVERROOTTWO * (-y - x))
+            self.set_thruster(5, ONEOVERROOTTWO * (x - y))
+            self.set_thruster(0, ONEOVERROOTTWO * (x + y))
+            self.set_thruster(3, ONEOVERROOTTWO * (-y - x))
+            self.set_thruster(2, ONEOVERROOTTWO * (y - x))
         elif abs(z_rotation) > CONTROLLER_DEADZONE:  # Yaw (Spin)
             self.set_thruster(5, -z_rotation)
             self.set_thruster(0, z_rotation)
