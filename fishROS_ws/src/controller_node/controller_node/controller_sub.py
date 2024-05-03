@@ -1,42 +1,33 @@
 """
-Author(s): Everett Tucker
+Author(s): Everett Tucke
 Creation Date: 01/09/2024
-Description: Tests getting controller inputs from the joy topic and writing to motors
+Description: Gets controller input from the joy publisher and send a twist message
+Subscribers: Joy
+Publishers: Twist
 """
 
 
 import rclpy
 import time
 import busio
-from board import SCL, SDA
-from adafruit_pca9685 import PCA9685
-from adafruit_motor import servo
 from rclpy.node import Node
+from rclpy.executors import MultiThreadedExecutor
 from sensor_msgs.msg import Joy
+from geometry_msgs.msg import Twist
 
-class MinimalSubscriber(Node):
+
+# Global dynamic variables
+controller_init = false
+axes = []
+buttons = []
+
+
+class ControllerSub(Node):
 
     def __init__(self):
         # Creating the subscriber
-        super().__init__('minimal_subscriber')
+        super().__init__('controller_subscriber')
         self.subscription = self.create_subscription(Joy, 'joy', self.listener_callback, 10)
-    
-        # Creating the servo
-        i2c_bus = busio.I2C(SCL, SDA)
-        self.pca = PCA9685(i2c_bus)
-        self.pca.frequency = 450
-
-        # Sets the duty cycle for the LED pin to match the servo
-        self.pca.channels[0].duty_cycle = 0xFFFF
-        
-        # Turns the LED off
-        # self.pca.channels[0].duty_cycle = 0x0000
-
-        self.thruster = servo.ContinuousServo(self.pca.channels[8], min_pulse=1100, max_pulse=1900)
-
-        self.thruster.throttle = 0
-        self.get_logger().info("Thruster Initializing...")
-        time.sleep(7)
 
     def listener_callback(self, msg):
         """
@@ -53,7 +44,7 @@ class MinimalSubscriber(Node):
         Power/Xbox Button: 8
         Left Joystick Press: 9
         Right Joystick Press: 10
-        
+
         msg.axes contains the float inputs
         Each index below returns a float in [-1, 1]
 
@@ -66,28 +57,68 @@ class MinimalSubscriber(Node):
         Pad Horizontal: 6 - left -> 1, right -> -1
         Pad Vertical: 7 - up -> 1, down -> -1
         """
-        
+
         """
         In my testing, I found that an angle of about 110 resulted in no motion
         Whereas an angle of 90 resulted in slow forward motion.
         """
 
-        # Angle is limited to [45, 135]
-        self.thruster.throttle = msg.axes[1]
+        global controller_init, axes, buttons
+        axes = msg.axes
+        buttons = msg.buttons
+        controller_init = True
 
-        # This time roughly matches the frequency of the pwm - 450 Hz
-        time.sleep(0.002)
 
-        self.get_logger().info(f'Throttle is at: {msg.axes[1]}')
+
+class TwistPub(Node):
+    def __init__(self):
+        # Creating the publisher
+        super().__init__("twist_publisher")
+        self.publisher = self.create_publisher(Twist, 'twist', 10)
+
+    def publishTwist(self):
+        if controller_init:
+            twist_message = Twist()
+
+            # Modify twist_message using global variables axes and buttons
+
+            # Linear Motion - (x, y, z)
+            twist_message.linear.x = axes[1]
+            twist_message.linear.y = axes[0]
+            if axes[2] < axes[5]:
+                linear_z = (axes[2] - 1) / 2
+            else:
+                linear_z = -(axes[5] - 1) / 2
+            twist_message.linear.z = linear_z
+
+            # Angular Motion - Just yaw for now
+            twist_message.angular.x = 0
+            twist_message.angular.y = 0
+            twist_message.angular.z = axes[3]
+
+            self.publisher.publish(twist_message)
 
 
 def main(args=None):
     rclpy.init(args=args)
-    minimal_subscriber = MinimalSubscriber()
-    rclpy.spin(minimal_subscriber)
 
-    minimal_subscriber.destroy_node()
+    executor = MultiThreadedExecutor()
+    controller_sub = ControllerSub()
+    twist_pub = TwistPub()
+    executor.add_node(controller_sub)
+    executor.add_node(twist_pub)
+
+    # Launching the executor
+    executor.spin()
+
+    # Destroying Nodes
+    controller_sub.destroy_node()
+    twist_pub.destroy_node()
+
+    # Shutting down the program
     rclpy.shutdown()
+
 
 if __name__ == '__main__':
     main()
+

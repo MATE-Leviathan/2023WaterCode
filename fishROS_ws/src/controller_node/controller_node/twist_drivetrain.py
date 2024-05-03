@@ -73,6 +73,7 @@ class DriveRunner(Node):
     RU: 14
     RB: 13
     """
+    
     def twist_callback(self, msg):
         x = msg.linear.x
         y = msg.linear.y
@@ -80,8 +81,7 @@ class DriveRunner(Node):
         x_rotation = msg.angular.x
         z_rotation = msg.angular.z
         ### Horizontal Motor Writing
-        # Note: I am negating the y-components for testing
-        if abs(x) > CONTROLLER_DEADZONE or abs(y) > CONTROLLER_DEADZONE:  # Linear Movement in XY
+        if abs(x) > CONTROLLER_DEADZONE or abs(y) > CONTROLLER_DEADZONE: # Linear Movement in XY
             self.set_thruster(5, ONEOVERROOTTWO * (x - y))
             self.set_thruster(0, ONEOVERROOTTWO * (x + y))
             self.set_thruster(3, ONEOVERROOTTWO * (-y - x))
@@ -126,14 +126,22 @@ def main(args=None):
     rclpy.init(args=args)
 
     executor = MultiThreadedExecutor()
-    executor.add_node(DriveRunner())
-    executor.add_node(IMUSub())
+    drive_runner = DriveRunner()
+    imu_sub = IMUSub()
+    executor.add_node(drive_runner)
+    executor.add_node(imu_sub)
 
     # Starting the execution loop
     executor.spin()
 
+    # Destroying Nodes
+    drive_runner.destroy_node()
+    imu_sub.destroy_node()
+
     # Shutting down the program
     rclpy.shutdown()
 
+
 if __name__ == '__main__':
     main()
+
