@@ -15,7 +15,7 @@ import cv2
 from cv_bridge import CvBridge
 
 
-VIDEO_DEVICE = 1 # /dev/videoX
+VIDEO_DEVICE = 0 # /dev/videoX
 
 
 class ExploreHDPub(Node):
@@ -35,7 +35,7 @@ class ExploreHDPub(Node):
     """
     def __init__(self):
         super().__init__('minimal_publisher')
-        self.publisher = self.create_publisher(Image, 'Image', 10)
+        self.publisher = self.create_publisher(Image, 'Image2', 10)
         #self.get_logger().info(self.get_node_names_and_namespaces())
         self.declare_parameter('video_device_id', 0)
 

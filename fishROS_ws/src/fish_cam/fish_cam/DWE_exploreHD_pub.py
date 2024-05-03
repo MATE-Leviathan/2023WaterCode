@@ -1,7 +1,9 @@
 """
-Author(s): Christopher Holley
+Author(s): Christopher Holley, Everett Tucker
 Creation Date: 09/09/2023
 Description: Handles interfacing with the camera and publishing the images converted to ros messages
+Publishers: Image
+Subscribers: None
 """
 
 import rclpy
@@ -13,7 +15,7 @@ import cv2
 from cv_bridge import CvBridge
 
 
-VIDEO_DEVICE = 1 # /dev/videoX
+VIDEO_DEVICE = 4 # /dev/videoX
 
 
 class ExploreHDPub(Node):
