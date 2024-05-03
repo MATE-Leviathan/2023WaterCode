@@ -37,7 +37,7 @@ class ExploreHDPub(Node):
         super().__init__('minimal_publisher')
         self.publisher = self.create_publisher(Image, 'Image', 10)
         #self.get_logger().info(self.get_node_names_and_namespaces())
-        self.declare_parameter('video_device_id', 1)
+        self.declare_parameter('video_device_id', 0)
 
         VIDEO_DEVICE = self.get_parameter('video_device_id').get_parameter_value().integer_value
         print(f"Video device parameter is {VIDEO_DEVICE}")
